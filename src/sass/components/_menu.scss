@@ -1,0 +1,45 @@
+$nav-text-color: $color-grey-light-2;
+
+.navbar {
+  // padding: 0.5rem;
+  background-color: $color-almost-black;
+  position: relative;
+
+  &-brand {
+    color: $color-grey-light-2;
+    font-size: 2.4rem;
+    margin-left: 13rem;
+    font-family: 'Norican', cursive;
+  }
+
+  &-nav {
+    font-size: 1.6rem;
+    width: 100%;
+    padding-right: 3rem;
+  }
+}
+
+.logo {
+  position: absolute;
+  transform: scale(0.3);
+  padding-top: 12rem;
+}
+
+.nav {
+  &-link {
+    margin-left: 3rem;
+  }
+}
+
+// Overriding bootstrap default colors
+// Brand color
+.navbar-light .navbar-brand {
+  color: $nav-text-color;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $nav-text-color;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: $nav-text-color;
+}
