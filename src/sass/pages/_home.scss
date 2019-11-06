@@ -1,0 +1,75 @@
+.homeHeader {
+  width: 100%;
+  height: 90vh;
+  background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
+  color: $color-grey-light-2;
+  position: relative;
+
+  &--darkLayer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.249);
+
+    // Position content
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--content {
+    margin-left: 10rem;
+    text-align: right;
+  }
+
+  &--headLine {
+    font-size: 10rem;
+    text-shadow: 3px 3px 3px rgba(48, 48, 48, 0.913);
+  }
+
+  &--tagLine {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-shadow: 3px 3px 3px rgba(23, 23, 23, 0.913);
+  }
+
+  &--locLine {
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px rgba(23, 23, 23, 0.913);
+  }
+}
+
+.pawDivider {
+  width: 100%;
+  height: 2rem;
+  background-color: $color-grey-light-1;
+  position: relative;
+
+  &__border {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-grey-light-1;
+
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // border: 3px solid rgba(0, 0, 0, 0.6);
+  }
+
+  &__pawIcon {
+    color: $color-gold;
+    font-size: 5rem;
+    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.66));
+  }
+}
+
+.fillerDiv {
+  width: 100%;
+  height: 300rem;
+  background-color: darkgray;
+}

@@ -1,45 +1,77 @@
-$nav-text-color: $color-grey-light-2;
+$nav-color-default: $color-grey-light-2;
+$nav-color-special: $color-gold;
+
+nav {
+  background-color: $color-almost-black;
+}
 
 .navbar {
   // padding: 0.5rem;
-  background-color: $color-almost-black;
+
   position: relative;
+  width: 80%;
+  margin: auto;
 
   &-brand {
-    color: $color-grey-light-2;
     font-size: 2.4rem;
-    margin-left: 13rem;
-    font-family: 'Norican', cursive;
+    margin-left: 7rem;
+    color: $nav-color-default !important;
+    transform: translateY(2px);
+
+    &:hover {
+      color: $nav-color-special !important;
+    }
   }
 
   &-nav {
     font-size: 1.6rem;
     width: 100%;
-    padding-right: 3rem;
   }
 }
 
 .logo {
   position: absolute;
-  transform: scale(0.3);
-  padding-top: 12rem;
+  top: 1rem;
+  z-index: 99;
 }
 
 .nav {
   &-link {
-    margin-left: 3rem;
+    padding: 0 !important;
+    margin-left: 2rem;
+    color: $nav-color-default !important;
+    text-align: center;
+  }
+  &-link:hover {
+    color: $nav-color-special !important;
+  }
+
+  &-link.active {
+    color: $nav-color-default !important;
+    // text-decoration: underline $color-bright-blue solid;
+    border-bottom: 1px solid $nav-color-special;
   }
 }
 
-// Overriding bootstrap default colors
-// Brand color
-.navbar-light .navbar-brand {
-  color: $nav-text-color;
+.navbar-toggler {
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color: $nav-text-color;
-}
-.navbar-light .navbar-nav .nav-link.active {
-  color: $nav-text-color;
+.mobileToggle {
+  // display: flex;
+  // align-items: center;
+  border: 1px solid $nav-color-default;
+  padding: 5px 10px;
+  border-radius: 3px;
+
+  color: $nav-color-default !important;
+  font-size: $default-font-size;
+
+  &:hover {
+    color: $nav-color-special !important;
+    border: 1px solid $nav-color-special;
+  }
+
+  & svg {
+    transform: translateY(-0.2rem);
+  }
 }

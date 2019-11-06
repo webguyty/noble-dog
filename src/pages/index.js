@@ -1,20 +1,33 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-import Button from 'react-bootstrap/Button';
+import Menu from '../components/menu';
+
+import { FaPaw } from 'react-icons/fa';
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title='Home' />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-    <Link to='/page-2/'>Go to page 2</Link>
-  </Layout>
+    <Menu />
+    <header className='homeHeader'>
+      <div className='homeHeader--darkLayer'>
+        <div className='homeHeader--content'>
+          <h3 className='homeHeader--headLine fancyText'>The Noble Dog</h3>
+          <h4 className='homeHeader--tagLine'>
+            Behavior Modification and Training
+          </h4>
+          <p className='homeHeader--locLine'>Ventura County, California</p>
+        </div>
+      </div>
+    </header>
+    <div className='pawDivider'>
+      <div className='pawDivider__border'>
+        <FaPaw className='pawDivider__pawIcon' />
+      </div>
+    </div>
+    <div className='fillerDiv'></div>
+  </>
 );
 
 export default IndexPage;
