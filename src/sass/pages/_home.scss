@@ -1,8 +1,9 @@
 .homeHeader {
   width: 100%;
-  height: 90vh;
+  height: 80vh;
   background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
-  color: $color-grey-light-2;
+  // color: $color-grey-light-2;
+  color: $text-color-light;
   position: relative;
 
   &--darkLayer {
@@ -40,8 +41,8 @@
 
 .pawDivider {
   width: 100%;
-  height: 2rem;
-  background-color: $color-grey-light-1;
+  height: 0.5rem;
+  background-color: $text-color-light;
   position: relative;
 
   &__border {
@@ -49,10 +50,10 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: $color-grey-light-1;
+    background-color: $text-color-light;
 
-    width: 7rem;
-    height: 7rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 100%;
 
     display: flex;
@@ -63,8 +64,194 @@
 
   &__pawIcon {
     color: $color-gold;
-    font-size: 5rem;
+    font-size: 3rem;
     filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.66));
+    transition: all 0.15s;
+
+    &:hover {
+      transform: translateY(-0.2rem) scale(1.13);
+      filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.56));
+      cursor: pointer;
+    }
+  }
+}
+
+.home {
+  &__introBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: $text-color-light;
+
+    & > div {
+      min-height: 30rem;
+    }
+  }
+
+  &__headline {
+    padding: 3rem;
+    background: url('../images/b&w-dog-bg.jpg') center/cover no-repeat;
+
+    & h1 {
+      color: $text-color-light;
+      font-size: 8rem;
+      font-weight: 400;
+      text-shadow: 4px 4px rgba($color-black, 0.6);
+    }
+  }
+
+  &__border {
+    border: 0.4rem dotted $text-color-light;
+    padding: 2rem 2rem 1rem 2rem;
+    margin: 1rem;
+    height: 100%;
+  }
+  &__introduction {
+    background-color: $color-blue-light;
+
+    & h2 {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      text-align: center;
+      font-size: 3rem;
+    }
+
+    & p {
+      padding-bottom: 2rem;
+      font-size: 2.2rem;
+      font-weight: 300;
+      line-height: 2;
+    }
+  }
+
+  &__mainCopy {
+    width: 100%;
+    // margin: auto;
+    padding: 5rem 10rem;
+    background-color: $color-grey-light-1;
+
+    // padding: 5rem 10rem;
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 10rem;
+      grid-column-gap: 5rem;
+    }
+
+    & > div {
+      padding: 5rem;
+      min-height: 90rem;
+    }
+
+    & h2 {
+      padding: 5rem;
+      width: 100%;
+      font-size: 3.8rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: transparent;
+      font-weight: 700;
+      background-image: linear-gradient(
+        to right,
+        $color-blue-light 60%,
+        $color-blue-dark
+      );
+      background-clip: text;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(1.05) translateY(-2px);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+      }
+    }
+
+    &__content {
+      width: 100%;
+      & h3 {
+        padding-bottom: 2rem;
+        font-size: 2.8rem;
+        text-transform: uppercase;
+        color: transparent;
+        background-image: linear-gradient(
+          to right,
+          $color-blue-light,
+          $color-blue-dark
+        );
+        background-clip: text;
+        // text-align: center;
+      }
+      & p {
+        font-size: 2rem;
+        width: 80%;
+      }
+    }
+  }
+}
+
+.composition {
+  position: relative;
+  width: 100%;
+  background-color: cyan;
+  &__photo {
+    width: 50%;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 1rem;
+
+    &--p1 {
+      left: 1rem;
+      // top: -2rem;
+      z-index: 20;
+    }
+
+    &--p2 {
+      right: 1rem;
+      top: 3rem;
+    }
+
+    &--p3 {
+      left: 1rem;
+      // top: -2rem;
+      z-index: 20;
+    }
+
+    &--p4 {
+      right: 1rem;
+      top: 3rem;
+    }
+
+    &:hover {
+      outline: 1rem solid $color-blue-light;
+      transform: scale(1.1) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
+      z-index: 30;
+    }
+
+    &:hover &__photo:not(:hover) {
+      transform: scale(0.95);
+    }
+  }
+}
+
+.section-stories {
+  position: relative;
+}
+
+.stories {
+  &__bg-image {
+    width: 100%;
+    height: 60rem;
+
+    background: linear-gradient(
+        100deg,
+        rgba($color-white, 0.7),
+        rgba($color-white, 0.4)
+      ),
+      url('../images/australian-shepherd-bg.jpg') no-repeat center / cover;
   }
 }
 
