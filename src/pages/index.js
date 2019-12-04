@@ -4,26 +4,9 @@ import SEO from '../components/seo';
 
 import Menu from '../components/menu';
 import Slider from '../components/success-slider';
-// import Glide from '@glidejs/glide';
+import Image2 from '../components/Image2';
+
 import { FaPaw } from 'react-icons/fa';
-// import Glide from '@glidejs/glide';
-
-// new Glider(document.querySelector('.glider'), {
-//   slidesToShow: 1,
-//   dots: '#dots',
-//   draggable: true,
-//   arrows: {
-//     prev: '.glider-prev',
-//     next: '.glider-next'
-//   }
-// });
-
-// window.addEventListener('load', event => {
-//   let slider = document.querySelector('.glide');
-//   new Glide(slider).mount();
-// });
-
-// new Glide('.glide').mount();
 
 const IndexPage = () => (
   <>
@@ -70,7 +53,7 @@ const IndexPage = () => (
           <h2>Ready For A Happier Dog That's Easier To Manage?</h2>
           <div className='home__mainCopy__grid'>
             <div className='home__mainCopy__content home__mainCopy__content--1'>
-              <h3>Understand that you’re not alone</h3>
+              <h3 className='h3Styled'>Understand that you’re not alone</h3>
               <p>
                 Like most dog owners, you may be experiencing chronic behavior
                 issues or bad habits with your pet. The fact is many dog owners
@@ -98,7 +81,9 @@ const IndexPage = () => (
               </div>
             </div>
             <div className='home__mainCopy__content home__mainCopy__content--2'>
-              <h3>In many cases it's best to call a professional</h3>
+              <h3 className='h3Styled'>
+                In many cases it's best to call a professional
+              </h3>
               <p>
                 And that’s where I come in! Together, we’ll get you and your dog
                 on the same wavelength. You’ll be happier, experience more good
@@ -130,44 +115,17 @@ const IndexPage = () => (
       </section>
       <section className='section-stories'>
         <div className='stories__bg-image'>
-          <Slider />
-          {/* <div>
-            <div className='glide__container'>
-              <div class='glide'>
-                {' '}
-                b
-                <div class='glide__track' data-glide-el='track'>
-                  <ul class='glide__slides'>
-                    <li class='glide__slide'>0</li>
-                    <li class='glide__slide'>1</li>
-                    <li class='glide__slide'>2</li>
-                  </ul>
-                </div>
-                <div class='glide__arrows' data-glide-el='controls'>
-                  <button
-                    class='glide__arrow glide__arrow--left'
-                    data-glide-dir='<'
-                  >
-                    prev
-                  </button>
-                  <button
-                    class='glide__arrow glide__arrow--right'
-                    data-glide-dir='>'
-                  >
-                    next
-                  </button>
-                </div>
-              </div>
+          <div className='stories__slider'>
+            <div>
+              <Slider />
             </div>
-            {/* <script src='https://cdn.jsdelivr.net/npm/@glidejs/glide' /> */}
-          {/* <script>new Glide('.glide').mount()</script> */}
-          {/* {new Glide('.glide').mount()}; */}
+          </div>
         </div>
       </section>
 
-      <div className='fillerDiv'></div>
-      {/* <script src='https://cdn.jsdelivr.net/npm/@glidejs/glide'></script>
-      <script>new Glide('.glide').mount()</script> */}
+      <div className='fillerDiv'>
+        <Image2 />
+      </div>
     </main>
   </>
 );

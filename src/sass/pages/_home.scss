@@ -170,16 +170,6 @@
       width: 100%;
       & h3 {
         padding-bottom: 2rem;
-        font-size: 2.8rem;
-        text-transform: uppercase;
-        color: transparent;
-        background-image: linear-gradient(
-          to right,
-          $color-blue-light,
-          $color-blue-dark
-        );
-        background-clip: text;
-        // text-align: center;
       }
       & p {
         font-size: 2rem;
@@ -244,7 +234,11 @@
 .stories {
   &__bg-image {
     width: 100%;
-    height: 60rem;
+    height: 65rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background: linear-gradient(
         100deg,

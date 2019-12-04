@@ -1,79 +1,66 @@
 import React, { Component } from 'react';
 import Glide from '@glidejs/glide';
-// import { Helmet } from 'react-helmet';
-{
-  /* <script src='https://cdn.jsdelivr.net/npm/@glidejs/glide' />;
-new Glide('.glide').mount(); */
-}
-
-// let action = document.querySelector('glide');
 
 class Slider extends Component {
   componentDidMount() {
-    new Glide('.glide').mount();
+    new Glide('.glide', {
+      perView: 2,
+      gap: 20
+    }).mount();
   }
 
   render() {
     return (
-      <div className='glide__container'>
-        <div className='glide'>
-          <div className='glide__track' data-glide-el='track'>
-            <ul className='glide__slides'>
-              <li className='glide__slide'>0</li>
-              <li className='glide__slide'>1</li>
-              <li className='glide__slide'>2</li>
-            </ul>
+      <div className='glide'>
+        <div className='glide__flexContainer'>
+          <h3 className='h3Styled'>Success Stories</h3>
+          {/* <p>Kind words from previous clients</p> */}
+        </div>
+        <div className='glide__track' data-glide-el='track'>
+          <div className='glide__slides'>
+            <div className='glide__slide'>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas, necessitatibus! Itaque, et. Quasi autem aperiam
+                consequuntur natus, suscipit molestiae placeat aut ipsam
+                distinctio dicta expedita eum porro quaerat consequatur quam
+                deleniti at provident obcaecati, asperiores est officia ratione
+              </p>
+            </div>
+            <div className='glide__slide'>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptas, necessitatibus! Itaque, et. Quasi autem aperiam
+                consequuntur natus, suscipit molestiae placeat aut ipsam
+                distinctio dicta expedita eum porro quaerat consequatur quam
+                deleniti at provident obcaecati, asperiores est officia ratione
+                deleniti at provident obcaecati, asperiores est officia ratione
+              </p>
+            </div>
+            <div className='glide__slide'>3</div>
+            <div className='glide__slide'>4</div>
+            <div className='glide__slide'>5</div>
+            <div className='glide__slide'>6</div>
+            <div className='glide__slide'>7</div>
           </div>
-          <div className='glide__arrows' data-glide-el='controls'>
-            <button
-              className='glide__arrow glide__arrow--left'
-              data-glide-dir='<'
-            >
-              prev
-            </button>
-            <button
-              className='glide__arrow glide__arrow--right'
-              data-glide-dir='>'
-            >
-              next
-            </button>
-          </div>
+        </div>
+        <div className='glide__arrows' data-glide-el='controls'>
+          <button
+            className='glide__arrow glide__arrow--left'
+            data-glide-dir='<'
+          >
+            prev
+          </button>
+          <button
+            className='glide__arrow glide__arrow--right'
+            data-glide-dir='>'
+          >
+            next
+          </button>
         </div>
       </div>
     );
-    {
-      /* <script src='https://cdn.jsdelivr.net/npm/@glidejs/glide' />
-      <script>new Glide('.glide').mount()</script> */
-    }
   }
 }
-
-// const Slider = () => (
-//   <div>
-//     <div className='glide__container'>
-//       <div class='glide'>
-//         {' '}
-//         b
-//         <div class='glide__track' data-glide-el='track'>
-//           <ul class='glide__slides'>
-//             <li class='glide__slide'>0</li>
-//             <li class='glide__slide'>1</li>
-//             <li class='glide__slide'>2</li>
-//           </ul>
-//         </div>
-//         <div class='glide__arrows' data-glide-el='controls'>
-//           <button class='glide__arrow glide__arrow--left' data-glide-dir='<'>
-//             prev
-//           </button>
-//           <button class='glide__arrow glide__arrow--right' data-glide-dir='>'>
-//             next
-//           </button>
-//         </div>
-//       </div>
-//     </div>
-//     <script src='https://cdn.jsdelivr.net/npm/@glidejs/glide' />
-//     <script>new Glide('.glide').mount()</script>
-//   </div>
-// );
 
 export default Slider;

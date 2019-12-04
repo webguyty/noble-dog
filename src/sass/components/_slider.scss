@@ -1,0 +1,43 @@
+.glide {
+  width: 120rem;
+  // min-height: 50rem;
+
+  background-color: rgba($color-white, 0.7);
+  border-radius: 6px;
+  // padding-right: 1rem;
+
+  &__track {
+    height: 100%;
+    // margin-right: 1rem;
+  }
+
+  &__slides {
+    height: 100%;
+    padding: 3rem;
+  }
+
+  &__slide {
+    height: 100%;
+    min-height: 30rem;
+    background-color: #fff;
+    opacity: 1;
+    border: 3px solid rgba($color-blue-light, 0.7);
+    margin-right: 2rem;
+    padding: 3rem;
+  }
+
+  &__flexContainer {
+    display: flex;
+    align-items: baseline;
+    padding: 4rem 4rem 0rem 4rem;
+
+    & h3 {
+      font-size: 3rem;
+    }
+
+    // & p {
+    //   color: $color-grey-dark-3;
+    //   font-size: 1.8rem;
+    // }
+  }
+}

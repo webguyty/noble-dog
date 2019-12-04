@@ -23,3 +23,15 @@ p {
 .textLight {
   color: $text-color-light;
 }
+
+.h3Styled {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    $color-blue-light,
+    $color-blue-dark
+  );
+  background-clip: text;
+}
