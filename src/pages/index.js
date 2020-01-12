@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import SEO from '../components/seo';
 
+import SEO from '../components/seo';
 import Menu from '../components/menu';
 import Slider from '../components/success-slider';
 import Image2 from '../components/Image2';
@@ -26,7 +26,9 @@ const IndexPage = () => (
     <main>
       <div className='pawDivider'>
         <div className='pawDivider__border'>
-          <FaPaw className='pawDivider__pawIcon' />
+          <a href='#home__mainCopy'>
+            <FaPaw className='pawDivider__pawIcon' />
+          </a>
         </div>
       </div>
       <section className='section-home-content'>
@@ -49,7 +51,7 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <div className='home__mainCopy'>
+        <div className='home__mainCopy' id='home__mainCopy'>
           <h2>Ready For A Happier Dog That's Easier To Manage?</h2>
           <div className='home__mainCopy__grid'>
             <div className='home__mainCopy__content home__mainCopy__content--1'>
