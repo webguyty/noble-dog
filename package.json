@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "The Noble Dog",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "The Noble Dog's master website",
   "version": "0.1.0",
   "author": "Tyler Austin <tyler@webguyty.com>",
   "dependencies": {

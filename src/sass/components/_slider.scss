@@ -1,11 +1,13 @@
 .glideWrapper {
   width: 120rem;
-  background-color: rgba($color-white, 0.7);
+
   border-radius: 6px;
-  padding: 4rem 3rem;
+  padding: 10rem 3rem;
+  z-index: 2;
 }
 
 .glide {
+  // background-color: #fff;
   &__track {
     height: 100%;
   }
@@ -24,9 +26,8 @@
     padding: 3rem;
   }
 
-  & h3 {
+  & h2 {
     font-size: 3rem;
-    text-transform: uppercase;
     text-align: center;
     padding-bottom: 2rem;
   }

@@ -15,7 +15,7 @@ class Slider extends Component {
     return (
       <div className='glideWrapper'>
         <div className='glide'>
-          <h3 className='h3Styled'>We make people genuinely happy</h3>
+          <h2 className='heading-secondary'>We make people genuinely happy</h2>
 
           <div className='glide__track' data-glide-el='track'>
             <div className='glide__slides'>

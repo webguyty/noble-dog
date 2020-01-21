@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
-  // color: $color-grey-dark;
+  color: $color-grey-dark-3;
 }
 
 p {
@@ -24,7 +24,13 @@ p {
   color: $text-color-light;
 }
 
-.h3Styled {
+.heading-primary {
+  font-family: 'Norican', cursive;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.heading-secondary {
   font-size: 2.8rem;
   text-transform: uppercase;
   color: transparent;
@@ -34,4 +40,10 @@ p {
     $color-blue-dark
   );
   background-clip: text;
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }

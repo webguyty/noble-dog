@@ -4,9 +4,16 @@ import { Link } from 'gatsby';
 import SEO from '../components/seo';
 import Menu from '../components/menu';
 import Slider from '../components/success-slider';
+import Inquire from '../components/Inquire';
 import Image2 from '../components/Image2';
 
-import { FaPaw } from 'react-icons/fa';
+import {
+  FaPaw,
+  FaCrown,
+  FaDog,
+  FaHandPaper,
+  FaUserFriends
+} from 'react-icons/fa';
 
 const IndexPage = () => (
   <>
@@ -52,10 +59,14 @@ const IndexPage = () => (
         </div>
 
         <div className='home__mainCopy' id='home__mainCopy'>
-          <h2>Ready For A Happier Dog That's Easier To Manage?</h2>
+          <h2 className='heading-secondary' id='homeTitle'>
+            Ready For A Happier Dog That's Easier To Manage?
+          </h2>
           <div className='home__mainCopy__grid'>
             <div className='home__mainCopy__content home__mainCopy__content--1'>
-              <h3 className='h3Styled'>Understand that you’re not alone</h3>
+              <h2 className='heading-secondary'>
+                Understand that you’re not alone
+              </h2>
               <p>
                 Like most dog owners, you may be experiencing chronic behavior
                 issues or bad habits with your pet. The fact is many dog owners
@@ -83,9 +94,9 @@ const IndexPage = () => (
               </div>
             </div>
             <div className='home__mainCopy__content home__mainCopy__content--2'>
-              <h3 className='h3Styled'>
+              <h2 className='heading-secondary'>
                 In many cases it's best to call a professional
-              </h3>
+              </h2>
               <p>
                 And that’s where I come in! Together, we’ll get you and your dog
                 on the same wavelength. You’ll be happier, experience more good
@@ -115,14 +126,54 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
-      <section className='section-stories'>
-        <div className='stories__bg-image'>
-          <div className='stories__slider'>
-            <div>
-              <Slider />
-            </div>
+
+      <section className='section-features'>
+        <h2 className='feature-box__mainTitle fancyText'>
+          We can help you build your:
+        </h2>
+        <div className='feature-box__grid'>
+          <div className='feature-box'>
+            <h3 className='heading-tertiary'>Relationship</h3>
+            <FaUserFriends className='feature-box__icon' />
+            <p className='feature-box__text'>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              eveniet maxime suscipit magnam.
+            </p>
+          </div>
+          <div className='feature-box'>
+            <h3 className='heading-tertiary'>Leadership</h3>
+            <FaCrown className='feature-box__icon' />
+            <p className='feature-box__text'>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              eveniet maxime suscipit magnam.
+            </p>
+          </div>
+          <div className='feature-box'>
+            <h3 className='heading-tertiary'>Socialization</h3>
+            <FaDog className='feature-box__icon' />
+            <p className='feature-box__text'>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              eveniet maxime suscipit magnam.
+            </p>
+          </div>
+          <div className='feature-box'>
+            <h3 className='heading-tertiary'>Basic Commands</h3>
+            <FaHandPaper className='feature-box__icon' />
+            <p className='feature-box__text'>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci
+              eveniet maxime suscipit magnam.
+            </p>
           </div>
         </div>
+        <h3 className='feature-box__link fancyText'>Learn More</h3>
+      </section>
+
+      <section className='section-stories'>
+        <Slider />
+      </section>
+
+      <section className='section-inquire'>
+        <Inquire />
       </section>
 
       <div className='fillerDiv'>
