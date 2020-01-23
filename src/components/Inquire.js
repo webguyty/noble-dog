@@ -7,7 +7,7 @@ const Inquire = props => {
       <h2 className='inquire__title'>Tell us about your dog</h2>
       <form action='#' className='form'>
         <div className='form__group'>
-          <label for='name' className='form__label'>
+          <label htmlFor='name' className='form__label'>
             Name
           </label>
           <input
@@ -19,7 +19,7 @@ const Inquire = props => {
           />
         </div>
         <div className='form__group'>
-          <label for='email' className='form__label'>
+          <label htmlFor='email' className='form__label'>
             Email
           </label>
           <input
@@ -31,7 +31,7 @@ const Inquire = props => {
           />
         </div>
         <div className='form__group'>
-          <label for='phone' className='form__label'>
+          <label htmlFor='phone' className='form__label'>
             Phone Number (optional)
           </label>
           <input

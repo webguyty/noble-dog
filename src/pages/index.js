@@ -2,9 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import SEO from '../components/seo';
+
+import DividerIcon from '../components/layout/DividerIcon';
+import HeaderHero from '../components/layout/HeaderHero';
+import Inquire from '../components/Inquire';
 import Menu from '../components/menu';
 import Slider from '../components/success-slider';
-import Inquire from '../components/Inquire';
+
 import Image2 from '../components/Image2';
 
 import {
@@ -19,25 +23,14 @@ const IndexPage = () => (
   <>
     <SEO title='Home' />
     <Menu />
-    <header className='homeHeader'>
-      <div className='homeHeader--darkLayer'>
-        <div className='homeHeader--content'>
-          <h3 className='homeHeader--headLine fancyText'>The Noble Dog</h3>
-          <h4 className='homeHeader--tagLine'>
-            Behavior Modification and Training
-          </h4>
-          <p className='homeHeader--locLine'>Ventura County, California</p>
-        </div>
-      </div>
-    </header>
+    <HeaderHero
+      addClass='homeHeader'
+      headline='The Noble Dog'
+      tagline='Behavior Modification and Training'
+      tertiaryLine='Ventura County, California'
+    />
     <main>
-      <div className='pawDivider'>
-        <div className='pawDivider__border'>
-          <a href='#home__mainCopy'>
-            <FaPaw className='pawDivider__pawIcon' />
-          </a>
-        </div>
-      </div>
+      <DividerIcon destination='#home__mainCopy' />
       <section className='section-home-content'>
         <div className='home__introBlock'>
           <div className='home__headline'>

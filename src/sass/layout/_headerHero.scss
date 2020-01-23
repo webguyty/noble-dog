@@ -1,0 +1,42 @@
+.headerHero {
+  width: 100%;
+  height: 80vh;
+  // background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
+  color: $text-color-light;
+
+  &--imageTint {
+    width: 100%;
+    height: 100%;
+    // background-color: rgba(0, 0, 0, 0.249);
+
+    // Position content
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--contentAlign {
+    margin-left: 10rem;
+    text-align: right;
+  }
+
+  &__headline {
+    @extend .fancyText;
+    font-size: 10rem;
+    text-shadow: 3px 3px 3px rgba(48, 48, 48, 0.913);
+    z-index: 2;
+  }
+
+  &__tagline {
+    font-size: 3.5rem;
+    font-weight: 400;
+    text-shadow: 3px 3px 3px rgba(23, 23, 23, 0.913);
+    z-index: 2;
+  }
+
+  &__tertiaryLine {
+    font-size: 3rem;
+    text-shadow: 3px 3px 3px rgba(23, 23, 23, 0.913);
+    z-index: 2;
+  }
+}

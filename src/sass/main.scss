@@ -12,13 +12,14 @@
 
 @import 'components/button';
 @import 'components/card';
+@import 'components/divider';
 @import 'components/inquire';
-@import 'components/menu';
 @import 'components/feature-box';
 @import 'components/slider';
 
+@import 'layout/menu';
 @import 'layout/footer';
-@import 'layout/header';
+@import 'layout/headerHero';
 @import 'layout/nav';
 
 @import 'pages/home';
