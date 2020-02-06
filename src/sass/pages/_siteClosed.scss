@@ -1,0 +1,21 @@
+.siteClosed {
+  width: 100%;
+  padding: 5rem;
+  background-color: $color-blue-light;
+
+  &__content {
+    min-height: 100rem;
+    background-color: $color-grey-light-1;
+    padding: 5rem;
+    text-align: center;
+  }
+
+  & h2 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  & p {
+    font-size: 2rem;
+  }
+}
