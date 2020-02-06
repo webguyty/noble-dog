@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const HeaderHero = props => {
   return (
-    <header className={'headerHero ' + props.addClass}>
+    <div className='headerHero'>
       <div className='headerHero--imageTint'>
         <div className='headerHero--contentAlign'>
           <h2 className='headerHero__headline'>{props.headline}</h2>
@@ -11,7 +11,7 @@ const HeaderHero = props => {
           <p className='headerHero__tertiaryLine'>{props.tertiaryLine}</p>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 
@@ -20,24 +20,26 @@ HeaderHero.defaultProps = {};
 HeaderHero.propTypes = {
   headline: PropTypes.string,
   tagline: PropTypes.string,
-  tertiaryLine: PropTypes.string,
-  addClass: PropTypes.string
+  tertiaryLine: PropTypes.string
 };
 
 export default HeaderHero;
 
 /************************************************************* 
- * How to add background image a styling
- * Add class to main block and add a class in style sheet of headerHero + 'addClass' name.
- * 
- * Example in SCSS
- .homeHeader.headerHero {
-  background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
+ * How to add background image and styling
+ * Wrap HeaderHero component in custom class, extend the 
+ * headerHero class and modify as needed
+ * Example: 
+  
+.homeHeader {
+  @extend .headerHero;
 
   & .headerHero {
+    background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
+
     &--imageTint {
       background-color: rgba(0, 0, 0, 0.249);
     }
   }
-}
+} 
 *************************************************************/

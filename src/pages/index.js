@@ -23,14 +23,16 @@ const IndexPage = () => (
   <>
     <SEO title='Home' />
     <Menu />
-    <HeaderHero
-      addClass='homeHeader'
-      headline='The Noble Dog'
-      tagline='Behavior Modification and Training'
-      tertiaryLine='Ventura County, California'
-    />
+    <header className='homeHeader'>
+      <HeaderHero
+        // addClass='homeHeader'
+        headline='The Noble Dog'
+        tagline='Behavior Modification and Training'
+        tertiaryLine='Ventura County, California'
+      />
+    </header>
     <main>
-      <DividerIcon destination='#home__mainCopy' />
+      <DividerIcon icon={<FaCrown />} destination='#home__mainCopy' />
       <section className='section-home-content'>
         <div className='home__introBlock'>
           <div className='home__headline'>
@@ -162,7 +164,7 @@ const IndexPage = () => (
       </section>
 
       <section className='section-stories'>
-        <Slider />
+        <Slider title='That piece of shit' />
       </section>
 
       <section className='section-inquire'>

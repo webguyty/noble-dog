@@ -4,11 +4,17 @@ import Glide from '@glidejs/glide';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 class Slider extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   componentDidMount() {
     new Glide('.glide', {
       perView: 2,
       gap: 30
     }).mount();
+    console.log(this.props.title);
   }
 
   render() {

@@ -1,7 +1,19 @@
-.homeHeader.headerHero {
-  background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
+// .homeHeader.headerHero {
+//   background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
+
+//   & .headerHero {
+//     &--imageTint {
+//       background-color: rgba(0, 0, 0, 0.249);
+//     }
+//   }
+// }
+
+.homeHeader {
+  @extend .headerHero;
 
   & .headerHero {
+    background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
+
     &--imageTint {
       background-color: rgba(0, 0, 0, 0.249);
     }
