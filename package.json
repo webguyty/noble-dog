@@ -1,9 +1,9 @@
 {
-  "name": "The Noble Dog",
+  "name": "tyler",
   "private": true,
-  "description": "The Noble Dog's master website",
+  "description": "the noble dogs master website",
   "version": "0.1.0",
-  "author": "Tyler Austin <tyler@webguyty.com>",
+  "author": "tyler austin <tyler@webguyty.com>",
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "bootstrap": "^4.3.1",
