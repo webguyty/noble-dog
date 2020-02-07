@@ -1,13 +1,3 @@
-// .homeHeader.headerHero {
-//   background: url('../images/home-header-2.jpg') no-repeat 30% center/cover;
-
-//   & .headerHero {
-//     &--imageTint {
-//       background-color: rgba(0, 0, 0, 0.249);
-//     }
-//   }
-// }
-
 .homeHeader {
   @extend .headerHero;
 
@@ -42,6 +32,10 @@
 
     & > div {
       min-height: 30rem;
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: auto;
     }
   }
 
