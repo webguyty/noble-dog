@@ -53,7 +53,7 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <div className='home__mainCopy' id='home__mainCopy'>
+        <div className='home__mainCopy'>
           <h2 className='heading-secondary' id='homeTitle'>
             Ready For A Happier Dog That's Easier To Manage?
           </h2>
@@ -74,7 +74,7 @@ const IndexPage = () => (
                 alone”.
               </p>
             </div>
-            <div className=' home__mainCopy__composition--1'>
+            <div className=' home__mainCopy__composition'>
               <div className='composition'>
                 <img
                   src={require('../images/dog-composition-1.jpg')}
@@ -104,7 +104,7 @@ const IndexPage = () => (
               </p>
             </div>
 
-            <div className='home__mainCopy__composition--1'>
+            <div className='home__mainCopy__composition'>
               <div className='composition'>
                 <img
                   src={require('../images/dog-composition-3.jpg')}
