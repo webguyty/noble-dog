@@ -4,7 +4,7 @@ import { FaDog } from 'react-icons/fa';
 
 const Menu = () => (
   <nav>
-    {/* <img src={require('../images/logo.png')} className='logo' /> */}
+    <img src={require('../images/logo.png')} className='logo' />
     <Navbar expand='lg'>
       <img
         src={require('../images/logo.png')}
