@@ -1,0 +1,95 @@
+.trainingInfo {
+  &__header {
+    @extend .headerHero;
+    & .headerHero {
+      background: url('../images/headers/focus-dog-training.jpg') no-repeat
+        center/cover;
+
+      &--imageTint {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &__background {
+    background-color: $color-grey-light-1;
+    width: 100%;
+    padding: 3rem;
+  }
+
+  &__wrapper {
+    max-width: 100rem;
+    background-color: white;
+    margin: auto;
+    padding: 5rem;
+  }
+
+  & h2 {
+    text-align: center;
+
+    & > .headerSmallerText {
+      font-size: 2.2rem;
+      text-transform: none;
+    }
+  }
+
+  & h3 {
+    @extend .heading-tertiary;
+
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  & h4 {
+    font-size: 1.8rem;
+  }
+
+  & p:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  // List styling
+  & ul,
+  ol {
+    font-size: 1.8rem;
+    // margin-left: 3rem;
+    // margin: 2rem 0;
+    margin: 2rem 0 2rem 3rem;
+  }
+
+  &__tableOfContents {
+    list-style: none;
+
+    & li {
+      display: flex;
+      align-items: center;
+      color: $color-blue-light;
+    }
+
+    & a:link,
+    a:visited,
+    a:active {
+      margin-left: 1rem;
+      text-decoration: underline;
+      color: $color-blue-light;
+    }
+
+    & a:hover {
+      color: $color-blue-dark;
+    }
+  }
+
+  &--listGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+
+    @include respond(phone) {
+      grid-template-columns: auto;
+      justify-content: start;
+      margin-left: 5rem !important;
+    }
+  }
+}

@@ -2,8 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from './header';
-import Menu from './menu';
+import Menu from './Menu';
 import '../sass/main.scss';
 
 const Layout = ({ children }) => {
@@ -19,8 +18,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Menu />
-      <Header />
+      {/* <Menu /> */}
       <div className='content'>
         <main>{children}</main>
       </div>
