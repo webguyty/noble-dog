@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import HeaderHero from '../components/layout/HeaderHero';
+import { FaDog } from 'react-icons/fa';
 
 const SecondPage = () => (
   <Layout>
@@ -49,24 +50,61 @@ const SecondPage = () => (
           <p className='text-center'>
             <strong>It's time to take back control NOW.</strong>
           </p>
-
           <p>
             I specialize in teaching both you as well as your dog how to
             coexist, with the proper order and hierarchy. An important (and
-            often-missed) part of training is involvement, and yes, training the
-            owner.
+            often-missed) part of training is involvement,{' '}
+            <strong>and yes, training the owner.</strong>
           </p>
           <p>
             Through my proven methods, I'll teach you how to be an effective,
             loving leader for your dog.
           </p>
+          <ul className='trainingInfo__tableOfContents'>
+            <li>
+              <FaDog />
+              <a href='#behaviorProblems'> Common behavior problems</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingMethods'> Training methods I use</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingSuccess'>Keys to success</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingExample'>An example of training</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingTools'>Tools for training</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingExpectations'>What can you expect</a>
+            </li>
+            <li>
+              <FaDog />{' '}
+              <a href='#trainingLength'>How long will it take to get results</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingExpectations'>What can you expect</a>
+            </li>
+            <li>
+              <FaDog />{' '}
+              <a href='#trainingOwner'>Do you really train the owner?</a>
+            </li>
+            <li>
+              <FaDog />{' '}
+              <a href='#trainingBestRates'>Best training in Ventura County</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingPrices'>Prices</a>
+            </li>
+          </ul>
           <p>
             In no time at all, we will have your dog treating you and your home
             with respect and proper behavior. It's a matter of patience,
             conditioning, and a positive training environment.
           </p>
-
-          <h3 className='text-center'>
+          <h3 id='behaviorProblems'>
             <u>
               Here are the more common problems that most dog owners experience
               with their pets:
@@ -93,7 +131,6 @@ const SecondPage = () => (
               <li>Excessive digging</li>
             </div>
           </ul>
-
           <p>
             Whether your dog's particular issue shows up on this list or not, I
             can help! Beyond that, I'll ensure that you end up with a dog who
@@ -105,8 +142,7 @@ const SecondPage = () => (
             commands you desire. All it takes is time and patience.
           </p>
           <p>Would you like get started? Just tell us about your dog!</p>
-
-          <h3>So What Training Methods Do I Use?</h3>
+          <h3 id='trainingMethods'>So What Training Methods Do I Use?</h3>
           <p>
             I believe in utilizing training methods that are positive, simple
             and effective. They must be able to apply to different aspects of a
@@ -138,7 +174,7 @@ const SecondPage = () => (
             communication. Every dog is different, so we'll also take the time
             to learn about your dog's own psychology and behavior patterns.
           </p>
-          <h3>
+          <h3 id='trainingSuccess'>
             Remember that accomplishing this successfully, takes time and
             commitment.
           </h3>
@@ -173,7 +209,7 @@ const SecondPage = () => (
             what the dog wants. And believe it or not, that is very rarely
             treats. Your dog wants your love and attention more than treats.{' '}
           </p>
-          <h3>Here's an example</h3>
+          <h3 id='trainingExample'>Here's an example</h3>
           <p>
             I will often ask a dog I work with to sit and stay before exiting
             the house. If the dog successfully obeys, he will be positively
@@ -202,7 +238,7 @@ const SecondPage = () => (
             Remember, I handle every dog with the same degree of love and
             attention I do with my very own. As ANY good trainer should.
           </p>
-          <h3>What tools do I use?</h3>
+          <h3 id='trainingTools'>What tools do I use?</h3>
           <p>
             To me, the most powerful tool, at the risk of sounding cliché', is
             the mind. When you learn the proper way to ask your dog to obey a
@@ -222,7 +258,9 @@ const SecondPage = () => (
             evaluation, we can discuss other tools. Including any you may be
             currently using with your dog, or have used in the past.
           </p>
-          <h3 className='pb-3'>What can you expect?</h3>
+          <h3 className='pb-3' id='trainingExpectations'>
+            What can you expect?
+          </h3>
           <h4 className='pb-2'>
             <strong>
               <u>
@@ -245,7 +283,7 @@ const SecondPage = () => (
               be happy to do it.
             </li>
           </ol>
-          <h3>How long will it take?</h3>
+          <h3 id='trainingLength'>How long will it take?</h3>
           <p>
             This depends greatly on a few factors. It also depends on what
             you're willing to commit on a personal level towards the training
@@ -285,7 +323,7 @@ const SecondPage = () => (
             information, practice and consistency, any dog owner can achieve
             great results with ANY dog.
           </p>
-          <h3>What will I have to do as the owner?</h3>
+          <h3 id='trainingOwner'>What will I have to do as the owner?</h3>
           <p>
             Remember, when you hire me, my job will be to train YOU as well as
             your dog. This process is easier than you think. It doesn't require
@@ -300,7 +338,7 @@ const SecondPage = () => (
             give you, do the homework, and you will see results in no time at
             all!
           </p>
-          <h3>
+          <h3 id='trainingBestRates'>
             Get Quality, Professional Training, At The Best Rates in Ventura
             County!
           </h3>
@@ -319,18 +357,25 @@ const SecondPage = () => (
             To best determine the package that's right for you, take advantage
             of an initial training session and consultation!
           </p>
-          <h4>
+          {/* <h4>
             To request a FREE evaluation training session, please click NOW!
             *insert link to inquiry form here*
-          </h4>
-          <h3>Training Package Options and Pricing:</h3>
+          </h4> */}
+          <h3 id='trainingPrices'>Training Package Options and Pricing:</h3>
+          <p>
+            <strong>Please contact us for prices.</strong> Email us at
+            thenobledog@gmail.com or give us a call (805) 222-6726.
+            <br />
+            Prices will be added in the section very soon. Please pardon the
+            inconvenience as the website is under maintenance
+          </p>
           <p>
             Need help? Have questions?
             <br />
             Feel free to contact me! *insert contact info, email, phone, etc*
           </p>
+          <Link to='/'>Go back to the homepage</Link>
         </div>
-        <Link to='/'>Go back to the homepage</Link>
       </div>
     </main>
   </Layout>
