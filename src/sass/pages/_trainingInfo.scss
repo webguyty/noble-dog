@@ -1,0 +1,33 @@
+.trainingInfo {
+  &__header {
+    @extend .headerHero;
+    & .headerHero {
+      background: url('../images/headers/focus-dog-training.jpg') no-repeat
+        center/cover;
+
+      &--imageTint {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  &__background {
+    background-color: $color-grey-light-1;
+    min-height: 700rem;
+    width: 100%;
+    padding: 3rem;
+  }
+
+  &__wrapper {
+    max-width: 100rem;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 3rem;
+  }
+
+  ul > li {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+}

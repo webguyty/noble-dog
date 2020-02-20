@@ -7,6 +7,22 @@
     &--imageTint {
       background-color: rgba(0, 0, 0, 0.249);
     }
+    &--contentAlign {
+      margin-left: 10rem;
+      text-align: right;
+
+      @include respond(phone) {
+        margin-left: 0;
+        padding-right: 3rem;
+        padding-top: 7rem;
+        // min-height: 80vh;
+      }
+    }
+
+    &__headline {
+      @extend .fancyText;
+      font-size: 10rem;
+    }
   }
 }
 

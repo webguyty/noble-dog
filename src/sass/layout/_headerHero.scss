@@ -16,20 +16,20 @@
   }
 
   &--contentAlign {
-    margin-left: 10rem;
-    text-align: right;
+    text-align: center;
+    padding: 5rem;
 
-    @include respond(phone) {
-      margin-left: 0;
-      padding-right: 1rem;
-      padding-top: 3rem;
-      min-height: 80vh;
-    }
+    // @include respond(phone) {
+    //   margin-left: 0;
+    //   padding-right: 1rem;
+    //   padding-top: 3rem;
+    //   min-height: 80vh;
+    // }
   }
 
   &__headline {
-    @extend .fancyText;
-    font-size: 10rem;
+    font-size: 6.5rem;
+    font-weight: 700;
     text-shadow: 3px 3px 3px rgba(48, 48, 48, 0.913);
     z-index: 2;
   }
