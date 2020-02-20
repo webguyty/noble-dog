@@ -19,14 +19,17 @@ const SecondPage = () => (
       </header>
       <div className='trainingInfo__background'>
         <div className='trainingInfo__wrapper trainingInfo'>
-          <h2>
-            Don't blame yourself or your dog! Behavior issues are VERY common.
-            They are often a result of conditioning, genetics, separation
-            anxiety, and several other factors.
+          <h2 className='heading-secondary'>
+            Don't blame yourself or your dog! <br />
+            <span className='headerSmallerText'>
+              Behavior issues are VERY common. They are often a result of
+              conditioning, genetics, separation anxiety, and several other
+              factors.
+            </span>
           </h2>
           <h3 className='text-center py-5'>
             The good news is: that regardless of the dog's age or past, they CAN
-            be overcome!{' '}
+            be overcome!
           </h3>
           <p>
             In every dog, there's one that's loving and able to behave well in
@@ -69,22 +72,26 @@ const SecondPage = () => (
               with their pets:
             </u>
           </h3>
-          <ul>
-            <li>Defiance</li>
-            <li>Aggression (various forms)</li>
-            <li>Walking properly</li>
-            <li>Dominance</li>
-            <li>Destructive behavior</li>
-            <li>Running away</li>
-            <li>Chewing</li>
-            <li>Shyness</li>
-            <li>Jumping on people and furniture</li>
-            <li>Stealing food</li>
-            <li>“Bogarting” items</li>
-            <li>Separation anxiety</li>
-            <li>Excessive barking</li>
-            <li>Urinating indoors</li>
-            <li>Excessive digging</li>
+          <ul className='trainingInfo--listGrid'>
+            <div>
+              <li>Defiance</li>
+              <li>Aggression (various forms)</li>
+              <li>Walking properly</li>
+              <li>Dominance</li>
+              <li>Destructive behavior</li>
+              <li>Running away</li>
+              <li>Chewing</li>
+              <li>Shyness</li>
+            </div>
+            <div>
+              <li>Jumping on people and furniture</li>
+              <li>Stealing food</li>
+              <li>“Bogarting” items</li>
+              <li>Separation anxiety</li>
+              <li>Excessive barking</li>
+              <li>Urinating indoors</li>
+              <li>Excessive digging</li>
+            </div>
           </ul>
 
           <p>
@@ -97,7 +104,7 @@ const SecondPage = () => (
             “obedience” training, I can work with your pet to obey any set of
             commands you desire. All it takes is time and patience.
           </p>
-          <p>Would you like get started? Just tell us about your dog! *link*</p>
+          <p>Would you like get started? Just tell us about your dog!</p>
 
           <h3>So What Training Methods Do I Use?</h3>
           <p>
@@ -133,14 +140,16 @@ const SecondPage = () => (
           </p>
           <h3>
             Remember that accomplishing this successfully, takes time and
-            commitment.{' '}
+            commitment.
           </h3>
-          <p className='text-center'>
+          <h4>
             <u>
-              Here are the more common problems that most dog owners experience
-              with their pets:
+              <strong>
+                Here are the more common problems that most dog owners
+                experience with their pets:
+              </strong>
             </u>
-          </p>
+          </h4>
           <ul>
             <li>The importance of fulfilling your dog's needs</li>
             <li>Proper walking and discipline procedures</li>
@@ -213,11 +222,15 @@ const SecondPage = () => (
             evaluation, we can discuss other tools. Including any you may be
             currently using with your dog, or have used in the past.
           </p>
-          <h3>What can you expect?</h3>
-          <p>
-            As a result of my working with your dog, you can expect some very
-            clear, distinct results:
-          </p>
+          <h3 className='pb-3'>What can you expect?</h3>
+          <h4 className='pb-2'>
+            <strong>
+              <u>
+                As a result of my working with your dog, you can expect some
+                very clear, distinct results:
+              </u>
+            </strong>
+          </h4>
           <ol>
             <li>
               Your dog will have excellent behavior skills, and will listen to
