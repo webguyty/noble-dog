@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from 'gatsby';
 
-// import Menu from './Menu';
+import Menu from './menu';
 import '../sass/main.scss';
 
 const Layout = ({ children }) => {
