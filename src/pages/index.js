@@ -23,7 +23,7 @@ const IndexPage = () => (
           />
         </header>
         <main>
-          <DividerIcon icon={<FaCrown />} destination='#' />
+          <DividerIcon icon={<FaCrown />} destination='#maintenance' />
           <div className='home__introBlock'>
             <div className='home__headline'>
               <h1>Ready To Be A Better Dog Owner?</h1>
@@ -49,19 +49,26 @@ const IndexPage = () => (
           </div>
           <div className='siteClosed'>
             <div className='siteClosed__content'>
-              <h2>Thank you for checking out The Noble Dog</h2>
+              <h2 id='maintenance'>
+                Thank you for checking out{' '}
+                <span className='fancyText'>The Noble Dog</span>
+              </h2>
               <p>Please Note that the website is under maintenance.</p>
-              <p>
-                We are currently not accepting new clients 2/6/2020 through
-                2/18/2020
-              </p>
               <p>
                 We apologize for any inconvenience, check back soon for updated
                 information.
               </p>
               <p>
-                Do you have a question? Please send us an email:
-                thenobledog@gmail.com
+                If you are interested in dog training and behavior modification
+                or if you have any questions please contact us!
+              </p>
+              <p>
+                <strong>
+                  thenobledog@gmail.com
+                  <br />
+                  (805) 222- 6726{' '}
+                </strong>
+                (please leave a message)
               </p>
             </div>
           </div>
@@ -132,6 +139,11 @@ const IndexPage = () => (
                   />
                 </div>
               </div>
+            </div>
+            <div className='text-center'>
+              <Link to='trainingInfo' className='fancyLink'>
+                Learn More
+              </Link>
             </div>
           </div>
         </main>

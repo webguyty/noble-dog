@@ -4,7 +4,6 @@ import { FaDog } from 'react-icons/fa';
 
 const Menu = () => (
   <nav>
-    <img src={require('../images/logo.png')} className='logo' />
     <Navbar expand='lg'>
       <img
         src={require('../images/logo.png')}
@@ -15,7 +14,7 @@ const Menu = () => (
         className='logo'
         alt='The Noble Dog logo'
       />
-      <Navbar.Brand className='fancyText' href='#home'>
+      <Navbar.Brand className='fancyText' href='/'>
         The Noble Dog
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav'>
@@ -26,11 +25,8 @@ const Menu = () => (
       </Navbar.Toggle>
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='justify-content-end'>
-          <Nav.Link href='#contact-us'>Contact Us</Nav.Link>
-          <Nav.Link href='#link'>Training Services</Nav.Link>
-          <Nav.Link href='#link'>Testimonials</Nav.Link>
-          <Nav.Link href='#link'>Photos</Nav.Link>
-          <Nav.Link href='#link'>Blog</Nav.Link>
+          <Nav.Link href='/'>Home</Nav.Link>
+          <Nav.Link href='/trainingInfo'>Training Information</Nav.Link>
           <Nav.Link href='#link'></Nav.Link>
         </Nav>
       </Navbar.Collapse>
