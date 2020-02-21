@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import DividerIcon from '../components/layout/DividerIcon';
 import HeaderHero from '../components/layout/HeaderHero';
 import Inquire from '../components/Inquire';
-import Menu from '../components/Menu';
+import Menu from '../components/menu';
 import Slider from '../components/success-slider';
 
 import Image2 from '../components/Image2';
