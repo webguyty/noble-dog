@@ -56,4 +56,12 @@ p {
   &:hover {
     color: $color-gold;
   }
+
+  &--blue {
+    color: $color-blue-light;
+
+    &:hover {
+      color: $color-blue-light;
+    }
+  }
 }

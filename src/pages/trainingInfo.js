@@ -61,6 +61,8 @@ const SecondPage = () => (
             loving leader for your dog.
           </p>
           <ul className='trainingInfo__tableOfContents'>
+            <h3 className='heading-tertiary'>Table Of Contents</h3>
+            <h4>Training methods:</h4>
             <li>
               <FaDog />
               <a href='#behaviorProblems'> Common behavior problems</a>
@@ -95,8 +97,19 @@ const SecondPage = () => (
               <FaDog />{' '}
               <a href='#trainingBestRates'>Best training in Ventura County</a>
             </li>
+            <h4 className='mt-4'>Training prices, service area, and hours:</h4>
+            <li>
+              <FaDog /> <a href='#trainingLocation'>Service area and hours</a>
+            </li>
             <li>
               <FaDog /> <a href='#trainingPrices'>Prices</a>
+            </li>
+            <li>
+              <FaDog />{' '}
+              <a href='#trainingCancellation'>Session cancellation policy</a>
+            </li>
+            <li>
+              <FaDog /> <a href='#trainingStart'>Get started with training</a>
             </li>
           </ul>
           <p>
@@ -131,6 +144,11 @@ const SecondPage = () => (
               <li>Excessive digging</li>
             </div>
           </ul>
+          <div className='text-center'>
+            <a href='#trainingStart' className='fancyLink fancyLink--blue'>
+              Get Started
+            </a>
+          </div>
           <p>
             Whether your dog's particular issue shows up on this list or not, I
             can help! Beyond that, I'll ensure that you end up with a dog who
@@ -361,18 +379,170 @@ const SecondPage = () => (
             To request a FREE evaluation training session, please click NOW!
             *insert link to inquiry form here*
           </h4> */}
-          <h3 id='trainingPrices'>Training Package Options and Pricing:</h3>
+
+          <h3 id='trainingLocation'>Service area and hours</h3>
           <p>
-            <strong>Please contact us for prices.</strong> Email us at
-            thenobledog@gmail.com or give us a call (805) 222-6726.
-            <br />
-            Prices will be added in the section very soon. Please pardon the
-            inconvenience as the website is under maintenance
+            We offer personal training sessions at your home, local park, and
+            other public locations around Ventura, Oxnard, and Camarillo. I
+            suggest getting started in your home as that is where you spend the
+            most of your time with your dog and where many behaviors originate
+            from. Going forward I'm happy to meet you and your dog at your home
+            and other public locations depending on what we are working on.
           </p>
+          <h4>
+            <u>Ventura and Oxnard</u>
+          </h4>
+          <p>
+            Wednesday, Thursday, and Friday from 4pm to 8pm
+            <br />
+            Saturday and Sunday from 10AM to 7PM
+          </p>
+          <h4>
+            <u>Camarillo</u>
+          </h4>
+          <p>Saturday and Sunday from 10AM to 7PM</p>
+
+          <h3 id='trainingPrices'>Training Package Options and Pricing</h3>
+
+          <h4>
+            Basic training package <strong>$325</strong>
+          </h4>
+          <p>
+            <strong>3 personal training sessions</strong>
+            <br />
+            Great for people looking to get started on the right foot with
+            training with their dog. (Not suitable for moderate aggression
+            issues)
+          </p>
+          <ul>
+            <li>Loose leash walking</li>
+            <li>Good socialization skills</li>
+            <li>Build your leadership</li>
+            <li>Basic Commands (sit, stay, heel, lie down)</li>
+            <li>
+              Basic good behavior (not jumping on people, staying off furniture,
+              quieting down barking)
+            </li>
+            <li>Intro to recall (coming when called)</li>
+            <li>Start working on anxiety issues</li>
+            <li>Invitation to meet-ups</li>
+          </ul>
+
+          <h4>
+            Noble dog training package <strong>$525</strong>
+          </h4>
+          <p>
+            <strong>6 personal training sessions</strong>
+            <br />
+            Great for people looking to get a great handle on their dogs
+            behavior in a large variety of situations. Suitable match for dogs
+            with moderate behavior and aggression issues.
+          </p>
+          <ul>
+            <li>Loose leash walking</li>
+            <li>Good socialization skills</li>
+            <li>Build your leadership</li>
+            <li>Basic Commands (sit, stay, heel, lie down)</li>
+            <li>
+              Basic good behavior (not jumping on people, staying off furniture,
+              quieting down barking)
+            </li>
+            <li>
+              Get behavior issues under control (dominance, aggression towards
+              dogs and other people, defiance)
+            </li>
+            <li>
+              Build strong recall skills and a reliable "come" in environments
+              with many distractions
+            </li>
+            <li>Greatly calm anxious dogs</li>
+            <li>Invitation to meet-ups</li>
+          </ul>
+
+          <h4>
+            Advanced training package <strong>$725</strong>
+          </h4>
+          <p>
+            <strong>9 personal training sessions</strong>
+            <br />
+            Great for people with dogs with intense behavioral issues looking to
+            fully include their dog in their lives, both around home and out in
+            public. "Mastering the basics" with dogs who need a little extra
+            help.
+          </p>
+          <ul>
+            <li>Loose leash walking</li>
+            <li>Good socialization skills</li>
+            <li>Build your leadership</li>
+            <li>Basic Commands (sit, stay, heel, lie down)</li>
+            <li>
+              Basic good behavior (not jumping on people, staying off furniture,
+              quieting down barking)
+            </li>
+            <li>
+              Get behavior issues under control (dominance, aggression towards
+              dogs and other people, defiance)
+            </li>
+            <li>
+              Build strong recall skills and a reliable "come" in environments
+              with many distractions
+            </li>
+            <li>Greatly calm anxious dogs</li>
+            <li>Invitation to meet-ups</li>
+          </ul>
+
+          <h3 id='trainingCancellation'>
+            Training Session cancellation policy
+          </h3>
+          <p>
+            We are happy to reschedule training sessions to a different day or
+            time if needed for any reason. However to provide the best service
+            to our clients we do have charges if cancellations are made with
+            less than 24 hours notice.
+          </p>
+          <h4>Less than 24 hours notice cancellation</h4>
+          <p>$30 charge</p>
+          <h4>Less than 3 hours notice cancellation</h4>
+          <p>Loss of training session</p>
+
+          <h3 id='trainingStart'>
+            Get started with training and behavior modification today
+          </h3>
+          <p>
+            The way I get started with people is by scheduling an initial
+            training session. The first training session generally runs an hour
+            long where we can get started working with your dog. We can talk
+            about your dog's behavior and take them for a walk together around
+            your neighborhood. After working with you and your dog and based on
+            their behavior I'll have a good idea on what we can get accomplished
+            in our training packages. I ask{' '}
+            <strong>$100 for the first training session </strong>
+            that I'm happy to apply towards any training session moving forward.
+          </p>
+
+          <h4>Get started today</h4>
+          <p>
+            Please send us an email{' '}
+            <a href='mailto:thenobledog@gmail.com' target='_top'>
+              {' '}
+              <strong>thenobledog@gmail.com</strong>
+            </a>
+            <br />
+            Tell us a little bit about your dogs behavior and your training
+            goals. If you can let us know what town you live in that helps with
+            scheduling. We will contact you shortly to help answer any questions
+            and set up our first training session.
+          </p>
+          <p>
+            Give us a call <strong>(805) 222-6726</strong>
+            <br /> Please leave a message as I'm frequently in training
+            sessions.
+          </p>
+
           <p>
             Need help? Have questions?
             <br />
-            Feel free to contact me! *insert contact info, email, phone, etc*
+            Feel free to contact me!
           </p>
           <Link to='/'>Go back to the homepage</Link>
         </div>
