@@ -60,6 +60,15 @@
   }
 
   &__tableOfContents {
+    & h3 {
+      color: $color-blue-light;
+      text-decoration: underline;
+    }
+
+    & h4 {
+      text-transform: uppercase;
+    }
+
     list-style: none;
 
     & li {
