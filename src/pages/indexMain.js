@@ -5,9 +5,9 @@ import SEO from '../components/seo';
 
 import DividerIcon from '../components/layout/DividerIcon';
 import HeaderHero from '../components/layout/HeaderHero';
-import Inquire from '../components/Inquire';
+import Inquire from '../components/blocks/Contact';
 
-import Slider from '../components/success-slider';
+import Slider from '../components/blocks/SuccessSlider';
 
 import Image2 from '../components/Image2';
 
