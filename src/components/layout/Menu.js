@@ -6,7 +6,7 @@ const Menu = () => (
   <nav>
     <Navbar expand='lg'>
       <img
-        src={require('../images/logo.png')}
+        src={require('../../images/logo.png')}
         width='45'
         height='65'
         // width='150'
