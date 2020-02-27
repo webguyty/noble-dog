@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 import DividerIcon from '../components/layout/DividerIcon';
 import HeaderHero from '../components/layout/HeaderHero';
-import Inquire from '../components/blocks/Contact';
+import Contact from '../components/blocks/Contact';
 
 import Slider from '../components/blocks/SuccessSlider';
 
@@ -168,7 +168,7 @@ const IndexPage = () => (
       </section>
 
       <section className='section-inquire'>
-        <Inquire />
+        <Contact />
       </section>
 
       <div className='fillerDiv'>
