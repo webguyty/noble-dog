@@ -13,15 +13,19 @@
 @import 'components/button';
 @import 'components/card';
 @import 'components/divider';
-@import 'components/contact';
+@import 'components/contact-form';
 @import 'components/feature-box';
 @import 'components/slider';
+
+@import 'components/elements/cities';
+@import 'components/elements/contact-info';
 
 @import 'layout/menu';
 @import 'layout/footer';
 @import 'layout/headerHero';
 @import 'layout/nav';
 
+@import 'pages/contactUs';
 @import 'pages/home';
 @import 'pages/siteClosed';
 @import 'pages/trainingInfo';

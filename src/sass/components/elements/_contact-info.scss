@@ -1,0 +1,24 @@
+.elements-contact-info {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  justify-content: space-around;
+  // align-items: center;
+
+  & p {
+    margin: 0;
+  }
+
+  &__label {
+    @extend .form__label;
+  }
+
+  &__address,
+  a,
+  a:hover,
+  a:visited {
+    color: $color-blue-light;
+    font-weight: bold;
+    font-size: 1.9rem;
+  }
+}

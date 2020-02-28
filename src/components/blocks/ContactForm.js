@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Contact = props => {
+const ContactForm = props => {
   return (
-    <div className='contact'>
-      <h2 className='contact__title'>Tell us about your dog</h2>
+    <div className='contactForm'>
+      <h3 className='contactForm__title'>{props.title}</h3>
       <form action='#' className='form'>
         <div className='form__grid'>
           <div className='form__group'>
@@ -51,6 +51,7 @@ const Contact = props => {
               className='form__input'
               placeholder='City'
               id='city'
+              required
             />
           </div>
         </div>
@@ -64,16 +65,19 @@ const Contact = props => {
             className='form__input'
             placeholder='Tell us a little bit about your dog and their behavior. Please let us know if you have any questions we are happy to answer them!'
             id='message'
+            required
           />
         </div>
         <button className='form__button' type='submit'>
-          Send
+          Submit
         </button>
       </form>
     </div>
   );
 };
 
-Contact.propTypes = {};
+ContactForm.propTypes = {
+  title: PropTypes.string
+};
 
-export default Contact;
+export default ContactForm;
