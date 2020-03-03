@@ -6,7 +6,7 @@ const ContactForm = props => {
     <div className='contactForm'>
       <h3 className='contactForm__title'>{props.title}</h3>
       <form
-        method='post'
+        method='POST'
         className='form'
         data-netlify='true'
         name='contactForm'
