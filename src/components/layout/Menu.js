@@ -27,6 +27,7 @@ const Menu = () => (
         <Nav className='justify-content-end'>
           <Nav.Link href='/'>Home</Nav.Link>
           <Nav.Link href='/trainingInfo'>Training Information</Nav.Link>
+          <Nav.Link href='/contactUs'>Contact Us</Nav.Link>
           {/* <Nav.Link href='#link'>Kind Words</Nav.Link> */}
         </Nav>
       </Navbar.Collapse>

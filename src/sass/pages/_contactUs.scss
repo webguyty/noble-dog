@@ -27,21 +27,20 @@
 
 .contact-wrapper {
   width: 100%;
-  min-height: 20rem;
+  background-color: $background-color-1;
+  background-image: $background-image-1;
   padding: 3rem;
-  background-color: $background-color;
-  background-image: $background-image;
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .contact-section {
-  max-width: 100rem;
+  max-width: 120rem;
   margin: auto;
-  min-height: 80rem;
   padding: 3rem;
-  padding-bottom: 4rem;
   background-color: $color-white;
-  border-radius: 4px;
+  border-radius: 1rem;
+
+  // background-color: $background-color-2;
+  // background-image: $background-image-2;
 
   h2 {
     margin-bottom: 2rem;
@@ -56,6 +55,9 @@
 .contactPage {
   &__introBlock {
     padding: 5rem 0;
+    border: 5px dotted $color-blue-light;
+    border-radius: 10px;
+    margin-bottom: 3rem;
   }
 
   &__introP {
