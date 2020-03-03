@@ -1,0 +1,39 @@
+.element-hours {
+  & p {
+    margin: 0;
+  }
+
+  &__title {
+    @extend .heading-tertiary;
+    padding-bottom: 0 !important;
+    margin: 0;
+  }
+
+  &__subtext {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+
+  &__label {
+    @extend .form__label;
+  }
+
+  &__time-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__days {
+  }
+
+  &__times {
+    // text-align: center;
+  }
+}

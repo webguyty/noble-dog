@@ -19,9 +19,11 @@ const Layout = ({ children }) => {
   return (
     <>
       <Menu />
-      <div className='content'>
-        <main>{children}</main>
-      </div>
+      <main>
+        <div className='content'>
+          <main>{children}</main>
+        </div>
+      </main>
     </>
   );
 };
