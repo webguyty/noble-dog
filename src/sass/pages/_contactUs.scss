@@ -30,6 +30,10 @@
   background-color: $background-color-1;
   background-image: $background-image-1;
   padding: 3rem;
+
+  @include respond(phone) {
+    padding: 1.5rem;
+  }
 }
 
 .contact-section {
@@ -40,7 +44,7 @@
   border-radius: 1rem;
 
   @include respond(phone) {
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
   }
 
   h2 {
