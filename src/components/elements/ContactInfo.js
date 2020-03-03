@@ -5,7 +5,9 @@ const ContactInformation = () => {
     <div className='elements-contact-info'>
       <div>
         <p className='elements-contact-info__label'>Phone</p>
-        <p className='elements-contact-info__address'>(805) 222-6726</p>
+        <p className='elements-contact-info__address'>
+          <a href='tel:1-805-222-6726'>(805) 222-6726</a>
+        </p>
       </div>
       <div>
         <p className='elements-contact-info__label'>Email</p>
