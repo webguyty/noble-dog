@@ -16,6 +16,10 @@
     grid-template-columns: auto auto;
     gap: 1rem 3rem;
     margin-bottom: 1rem;
+
+    @include respond(phone) {
+      gap: 1.5rem;
+    }
   }
 
   // &__group:not(:last-child) {

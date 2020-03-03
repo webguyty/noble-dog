@@ -29,7 +29,9 @@
   width: 100%;
   min-height: 20rem;
   padding: 3rem;
-  background-color: $color-blue-light;
+  background-color: $background-color;
+  background-image: $background-image;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .contact-section {
@@ -37,6 +39,7 @@
   margin: auto;
   min-height: 80rem;
   padding: 3rem;
+  padding-bottom: 4rem;
   background-color: $color-white;
   border-radius: 4px;
 
@@ -51,6 +54,10 @@
 }
 
 .contactPage {
+  &__introBlock {
+    padding: 5rem 0;
+  }
+
   &__introP {
     text-align: center;
     max-width: 60rem;
@@ -60,30 +67,41 @@
   &__grid {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    // grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 3rem;
 
     & h3 {
       @extend .heading-secondary;
       font-size: 2.5rem;
       font-weight: 400;
       text-align: center;
+      text-transform: capitalize;
     }
+
+    // @include respond(tab-port) {
+    //   grid-template-columns: auto;
+    // }
   }
 }
 
 .contactPage__details {
-  border: 1px solid black;
+  border: 1px solid $color-grey-dark-2;
   border-radius: 10px;
   padding: 2rem;
-
-  & h3 {
-    text-transform: capitalize;
-  }
+  background-image: url('../images/design/patterns/full-bloom.png');
+  box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
 
   &__cities {
     color: $color-grey-dark-3;
     margin-bottom: 2rem;
+  }
+
+  & .heading-tertiary {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    text-decoration: underline;
+    text-transform: capitalize;
   }
 }
 
@@ -93,10 +111,7 @@
     background-image: url('../images/design/patterns/full-bloom.png');
     border: 1px solid $color-grey-dark-2;
     border-radius: 10px;
-    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
-  }
-
-  & h3 {
-    // @extend .heading-secondary;
+    box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+    background-color: transparent;
   }
 }

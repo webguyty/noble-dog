@@ -5,7 +5,12 @@ const ContactForm = props => {
   return (
     <div className='contactForm'>
       <h3 className='contactForm__title'>{props.title}</h3>
-      <form action='#' className='form'>
+      <form
+        method='post'
+        className='form'
+        data-netlify='true'
+        name='contactForm'
+      >
         <div className='form__grid'>
           <div className='form__group'>
             <label htmlFor='name' className='form__label'>
