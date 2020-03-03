@@ -25,6 +25,7 @@ const ContactForm = props => {
               className='form__input'
               placeholder='Shannon and Tiger'
               id='name'
+              name='name'
               required
             />
           </div>
@@ -37,6 +38,7 @@ const ContactForm = props => {
               className='form__input'
               placeholder='dog@gmail.com'
               id='email'
+              name='email'
               required
             />
           </div>
@@ -49,6 +51,7 @@ const ContactForm = props => {
               className='form__input'
               placeholder='(805) 555-5555'
               id='phone'
+              name='phone'
             />
           </div>
           <div className='form__group'>
@@ -60,6 +63,7 @@ const ContactForm = props => {
               className='form__input'
               placeholder='City'
               id='city'
+              name='city'
               required
             />
           </div>
@@ -74,6 +78,7 @@ const ContactForm = props => {
             className='form__input'
             placeholder='Tell us a little bit about your dog and their behavior. Please let us know if you have any questions we are happy to answer them!'
             id='message'
+            name='message'
             required
           />
         </div>
