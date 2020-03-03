@@ -6,15 +6,15 @@ const ContactForm = props => {
     <div className='contactForm'>
       <h3 className='contactForm__title'>{props.title}</h3>
       <form
-        method='POST'
+        method='post'
         className='form'
         data-netlify='true'
-        data-netlify-honeypot='bot-field'
+        netlify-honeypot='bot-field'
         name='contactForm'
       >
         {/* To work in Gatsby, hidden fields below */}
         <input type='hidden' name='bot-field' />
-        <input type='hidden' name='form-name' value='contact' />
+        {/* <input type='hidden' name='form-name' value='contactForm' /> */}
         <div className='form__grid'>
           <div className='form__group'>
             <label htmlFor='name' className='form__label'>
