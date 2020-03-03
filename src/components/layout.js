@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 // import { useStaticQuery, graphql } from 'gatsby';
 
-import Menu from './layout/Menu';
 import '../sass/main.scss';
+import Menu from './layout/Menu';
+import Footer from './layout/Footer';
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

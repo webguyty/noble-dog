@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  // min-height: 30rem;
+  padding: 4rem 0;
+
+  &__container {
+    border: 3px dotted $color-grey-light-2;
+    max-width: 35rem;
+    // display: inline-block;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1rem 0;
+  }
+
+  & p {
+    @extend .fancyText;
+    color: $color-grey-light-2;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 5rem;
+  }
+
+  &__date {
+    font-size: 2rem;
+  }
+}
