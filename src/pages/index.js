@@ -219,7 +219,7 @@ const IndexPage = () => (
         </div>
         <div className='section-features__button-grid'>
           <BtnFancyText title='Learn More' to='trainingInfo' />
-          <BtnFancyText title='Get Started' to='#' />
+          <BtnFancyText title='Get Started' to='contactUs' />
         </div>
       </section>
     </Layout>

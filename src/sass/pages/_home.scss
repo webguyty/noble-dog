@@ -159,6 +159,7 @@
       & > div:first-child {
         border: 5px dotted $color-blue-light;
         border-radius: 10px;
+        background-image: url('../images/design/patterns/full-bloom.png');
         padding: 2rem;
       }
 
@@ -280,11 +281,14 @@
 
   &__button-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    max-width: 70rem;
+    margin: auto;
+    padding: 3rem 0 1rem 0;
 
     & > div {
-      margin: auto;
+      // margin: auto;
+      text-align: center;
       display: inline-block;
     }
   }
