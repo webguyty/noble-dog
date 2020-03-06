@@ -49,21 +49,3 @@ p {
 .fancyText {
   font-family: 'Norican', cursive;
 }
-
-.fancyLink {
-  @extend .fancyText;
-  font-size: 5rem;
-  color: $color-gold;
-
-  &:hover {
-    color: $color-gold;
-  }
-
-  &--blue {
-    color: $color-blue-light;
-
-    &:hover {
-      color: $color-blue-light;
-    }
-  }
-}

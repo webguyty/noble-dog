@@ -13,16 +13,6 @@
     transform: translateY(-1.5rem) scale(1.03);
   }
 
-  &__mainTitle {
-    text-align: center;
-    font-size: 7rem;
-    margin-bottom: 5rem;
-    // color: rgba($color-black, 0.8);
-    color: $color-white;
-
-    text-shadow: 2px 2px 3px rgba(black, 0.3);
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -62,18 +52,4 @@
   /********
   End card content styling
   *********/
-
-  &__link {
-    text-align: center;
-    color: $color-white;
-    font-size: 7rem;
-    text-shadow: 2px 2px 3px rgba(black, 0.3);
-    margin-top: 8rem;
-    text-decoration: underline;
-
-    &:hover {
-      cursor: pointer;
-      color: $color-gold;
-    }
-  }
 }

@@ -266,6 +266,28 @@
       //   rgba($color-grey-light-1, 0) 5%
       // ),
       url('../images/sky-grass-bg.jpg') no-repeat center / cover;
+
+  & > h2 {
+    @extend .fancyText;
+    text-align: center;
+    font-size: 7rem;
+    margin-bottom: 5rem;
+    // color: rgba($color-black, 0.8);
+    color: $color-white;
+
+    text-shadow: 2px 2px 3px rgba(black, 0.3);
+  }
+
+  &__button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+
+    & > div {
+      margin: auto;
+      display: inline-block;
+    }
+  }
 }
 
 .section-stories {

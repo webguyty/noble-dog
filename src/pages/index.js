@@ -13,6 +13,7 @@ import {
   FaUserFriends
 } from 'react-icons/fa';
 import Cities from '../components/elements/Cities';
+import BtnFancyText from '../components/buttons/BtnFancyText';
 
 const IndexPage = () => (
   <>
@@ -49,32 +50,6 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-
-      {/* <div className='siteClosed'>
-        <div className='siteClosed__content'>
-          <h2 id='maintenance'>
-            Thank you for checking out{' '}
-            <span className='fancyText'>The Noble Dog</span>
-          </h2>
-          <p>Please Note that the website is under maintenance.</p>
-          <p>
-            We apologize for any inconvenience, check back soon for updated
-            information.
-          </p>
-          <p>
-            If you are interested in dog training and behavior modification or
-            if you have any questions please contact us!
-          </p>
-          <p>
-            <strong>
-              thenobledog@gmail.com
-              <br />
-              (805) 222- 6726{' '}
-            </strong>
-            (please leave a message)
-          </p>
-        </div>
-      </div> */}
 
       <div className='home__mainCopy' id='home__mainCopy'>
         <h2 className='heading-secondary' id='homeTitle'>
@@ -156,12 +131,17 @@ const IndexPage = () => (
               </li>
               <li>
                 <FaDog />
-                <p>Defiance</p>
+                <p>Basic commands</p>
               </li>
               <li>
                 <FaDog />
                 <p>Aggression</p>
               </li>
+              <li>
+                <FaDog />
+                <p>Integrating</p>
+              </li>
+
               <li>
                 <FaDog />
                 <p>Dominance</p>
@@ -186,17 +166,15 @@ const IndexPage = () => (
           </div>
         </div>
 
-        <div className='text-center'>
+        {/* <div className='text-center'>
           <Link to='trainingInfo' className='fancyLink'>
             Learn More
           </Link>
-        </div>
+        </div> */}
       </div>
 
       <section className='section-features'>
-        <h2 className='feature-box__mainTitle fancyText'>
-          We can help you build your:
-        </h2>
+        <h2>We can help you build your:</h2>
         <div className='feature-box__grid'>
           <div className='feature-box'>
             <h4>Relationship</h4>
@@ -239,7 +217,10 @@ const IndexPage = () => (
             <p>Heal, sit, stay, come, and more!</p>
           </div>
         </div>
-        <h3 className='feature-box__link fancyText'>Learn More</h3>
+        <div className='section-features__button-grid'>
+          <BtnFancyText title='Learn More' to='trainingInfo' />
+          <BtnFancyText title='Get Started' to='#' />
+        </div>
       </section>
     </Layout>
   </>
