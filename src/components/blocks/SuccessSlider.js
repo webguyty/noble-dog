@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Glide from '@glidejs/glide';
 
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaPaw } from 'react-icons/fa';
 
-class Slider extends Component {
+class SuccessSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -14,18 +14,18 @@ class Slider extends Component {
       perView: 2,
       gap: 30
     }).mount();
-    console.log(this.props.title);
+    // console.log(this.props.title);
   }
 
   render() {
     return (
       <div className='glideWrapper'>
         <div className='glide'>
-          <h2 className='heading-secondary'>We make people genuinely happy</h2>
-
+          <h2 className='glide__heading'>We make people genuinely happy</h2>
           <div className='glide__track' data-glide-el='track'>
             <div className='glide__slides'>
               <div className='glide__slide'>
+                <div className='glide__slide__img'></div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptas, necessitatibus! Itaque, et. Quasi autem aperiam
@@ -34,6 +34,9 @@ class Slider extends Component {
                   deleniti at provident obcaecati, asperiores est officia
                   ratione
                 </p>
+                <p className='glide__slide__name'>Tyler Austin </p>
+                <FaPaw className='glide__slide__icon' />
+                <p className='glide__slide__location'>Ventura</p>
               </div>
               <div className='glide__slide'>
                 <p>
@@ -73,4 +76,4 @@ class Slider extends Component {
   }
 }
 
-export default Slider;
+export default SuccessSlider;

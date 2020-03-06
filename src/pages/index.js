@@ -14,6 +14,10 @@ import {
 } from 'react-icons/fa';
 import Cities from '../components/elements/Cities';
 import BtnFancyText from '../components/buttons/BtnFancyText';
+import ContactForm from '../components/blocks/ContactForm';
+import SuccessSlider from '../components/blocks/SuccessSlider';
+
+import str from '../tnd/testimonials';
 
 const IndexPage = () => (
   <>
@@ -165,12 +169,6 @@ const IndexPage = () => (
             </ul>
           </div>
         </div>
-
-        {/* <div className='text-center'>
-          <Link to='trainingInfo' className='fancyLink'>
-            Learn More
-          </Link>
-        </div> */}
       </div>
 
       <section className='section-features'>
@@ -220,6 +218,14 @@ const IndexPage = () => (
         <div className='section-features__button-grid'>
           <BtnFancyText title='Learn More' to='trainingInfo' />
           <BtnFancyText title='Get Started' to='contactUs' />
+        </div>
+      </section>
+      <section className='section-stories'>
+        <SuccessSlider />
+      </section>
+      <section className='section-inquire'>
+        <div className='home__contactForm'>
+          <ContactForm title='Tell us about your dog' />
         </div>
       </section>
     </Layout>

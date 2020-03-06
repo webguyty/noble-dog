@@ -1,32 +1,37 @@
 .glideWrapper {
-  width: 120rem;
+  max-width: $site-width;
 
-  border-radius: 6px;
-  padding: 10rem 3rem;
-  z-index: 2;
+  // border-radius: 6px;
+  padding: 0 3rem;
+  // z-index: 2;
 }
 
 .glide {
   // background-color: #fff;
-  &__track {
-    height: 100%;
-  }
 
-  &__slides {
-    height: 100%;
-  }
+  // &__track {
+  //   height: 100%;
+  // }
+
+  // &__slides {
+  //   height: 100%;
+  // }
 
   &__slide {
     height: 100%;
-    min-height: 30rem;
+    min-height: 50rem;
     background-color: #fff;
     opacity: 1;
-    border: 3px solid rgba($color-blue-light, 0.7);
-
+    border: 3px dotted $color-blue-light;
+    border-radius: 10px;
     padding: 3rem;
+    /***************
+    Interior slide styling below
+    ***************/
   }
 
-  & h2 {
+  &__heading {
+    @extend .heading-secondary;
     font-size: 3rem;
     text-align: center;
     padding-bottom: 2rem;
@@ -37,5 +42,44 @@
     font-size: 2.5rem;
     border-radius: 100%;
     margin: 0 -7rem;
+  }
+}
+
+.glide__slide {
+  &__img {
+    // padding: 3rem 0;
+    width: 22rem;
+    height: 22rem;
+    margin: auto;
+    background-color: $color-blue-light;
+    border-radius: 100%;
+  }
+  // Main testimonial spacing
+  & p:first-of-type {
+    margin-top: 3rem;
+  }
+
+  &__name,
+  &__location {
+    display: inline-block;
+    // margin-left: 1rem;
+    // font-weight: 700;
+  }
+
+  &__name {
+    font-weight: 700;
+    margin-left: 1rem;
+  }
+
+  &__icon {
+    color: $color-blue-light;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    transform: translateY(-0.3rem);
+  }
+
+  &__location {
+    // margin-left: 0.5rem;
+    font-style: italic;
   }
 }
