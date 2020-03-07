@@ -7,7 +7,7 @@ import DividerIcon from '../components/layout/DividerIcon';
 import HeaderHero from '../components/layout/HeaderHero';
 import ContactForm from '../components/blocks/ContactForm';
 
-import Slider from '../components/blocks/SuccessSlider';
+// import Slider from '../components/blocks/SuccessSlider';
 
 import Image2 from '../components/Image2';
 
@@ -164,7 +164,7 @@ const IndexPage = () => (
       </section>
 
       <section className='section-stories'>
-        <Slider title='That piece of shit' />
+        {/* <Slider title='That piece of shit' /> */}
       </section>
 
       <section className='section-inquire'>

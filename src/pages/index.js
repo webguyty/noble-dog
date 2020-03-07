@@ -15,9 +15,10 @@ import {
 import Cities from '../components/elements/Cities';
 import BtnFancyText from '../components/buttons/BtnFancyText';
 import ContactForm from '../components/blocks/ContactForm';
-import SuccessSlider from '../components/blocks/SuccessSlider';
+import TestimonialSlider from '../components/blocks/TestimonialSlider';
+import testimonials from '../tnd/testimonials';
 
-import str from '../tnd/testimonials';
+// import str from '../tnd/testimonials';
 
 const IndexPage = () => (
   <>
@@ -221,7 +222,8 @@ const IndexPage = () => (
         </div>
       </section>
       <section className='section-stories'>
-        <SuccessSlider />
+        <TestimonialSlider testimonials={testimonials} readMoreLink='#' />
+        {/* <BtnFancyText title='Read More Stories' to='#' color='blue' /> */}
       </section>
       <section className='section-inquire'>
         <div className='home__contactForm'>

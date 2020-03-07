@@ -82,4 +82,11 @@
     // margin-left: 0.5rem;
     font-style: italic;
   }
+
+  &__readMoreLink {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: underline;
+    color: $color-blue-light;
+  }
 }
