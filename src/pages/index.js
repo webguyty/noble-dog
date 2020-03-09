@@ -168,6 +168,9 @@ const IndexPage = () => (
                 <p>And More!</p>
               </li>
             </ul>
+            <div className='text-center pt-3'>
+              <BtnFancyText title='Training Programs' to='trainingInfo' />
+            </div>
           </div>
         </div>
       </div>
@@ -222,7 +225,10 @@ const IndexPage = () => (
         </div>
       </section>
       <section className='section-stories'>
-        <TestimonialSlider testimonials={testimonials} readMoreLink='#' />
+        <TestimonialSlider
+          testimonials={testimonials}
+          readMoreLink='/testimonials'
+        />
         {/* <BtnFancyText title='Read More Stories' to='#' color='blue' /> */}
       </section>
       <section className='section-inquire'>

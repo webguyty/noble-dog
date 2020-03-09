@@ -70,7 +70,8 @@ class TestimonialSlider extends Component {
 
 TestimonialSlider.propTypes = {
   readMoreLink: PropTypes.string,
-  testimonials: PropTypes.array
+  testimonials: PropTypes.array,
+  imgPath: PropTypes.string
 };
 
 export default TestimonialSlider;

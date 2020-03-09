@@ -120,6 +120,10 @@
 
     & > div {
       padding: 2rem;
+
+      @include respond(phone) {
+        padding: 2rem 1rem;
+      }
       // min-height: 90rem;
     }
 
@@ -191,6 +195,16 @@
           margin: 0;
           font-weight: 700;
           display: inline-block;
+        }
+      }
+
+      & .btnFancyText {
+        font-size: 3rem;
+        color: $color-grey-dark;
+        text-shadow: none;
+
+        &:hover {
+          color: $color-blue-light;
         }
       }
     }
