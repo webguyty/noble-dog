@@ -33,4 +33,13 @@
       color: $color-blue-dark;
     }
   }
+
+  &--grey {
+    color: $color-grey-dark;
+    text-shadow: none;
+
+    &:hover {
+      color: $color-blue-light;
+    }
+  }
 }

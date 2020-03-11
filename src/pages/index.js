@@ -169,7 +169,11 @@ const IndexPage = () => (
               </li>
             </ul>
             <div className='text-center pt-3'>
-              <BtnFancyText title='Training Programs' to='trainingInfo' />
+              <BtnFancyText
+                title='Training Programs'
+                to='trainingInfo'
+                color='grey'
+              />
             </div>
           </div>
         </div>
@@ -227,9 +231,17 @@ const IndexPage = () => (
       <section className='section-stories'>
         <TestimonialSlider
           testimonials={testimonials}
+          imgPath='../../images/testimonials/'
           readMoreLink='/testimonials'
         />
-        {/* <BtnFancyText title='Read More Stories' to='#' color='blue' /> */}
+
+        <div className='section-stories__button'>
+          <BtnFancyText
+            title='Read More Stories'
+            to='testimonials'
+            color='grey'
+          />
+        </div>
       </section>
       <section className='section-inquire'>
         <div className='home__contactForm'>

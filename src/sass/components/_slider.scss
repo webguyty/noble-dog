@@ -1,17 +1,35 @@
 .glideWrapper {
   max-width: $site-width;
-
+  // max-width: 100vw;
+  margin: auto;
   // border-radius: 6px;
   padding: 0 3rem;
   // z-index: 2;
+  // @media screen and (min-width: 102rem) {
+  //   body {
+  //     max-width: 100vw;
+  //   }
+  // }
+
+  @include respond(tab-land) {
+    max-width: 100vw;
+    padding: 0 2rem;
+  }
 }
 
 .glide {
   // background-color: #fff;
 
-  // &__track {
-  //   height: 100%;
-  // }
+  &__track {
+    // max-width: 100vw;
+    // @media screen and (min-width: 102rem) {
+    //   body {
+    //     max-width: 100vw;
+    //   }
+    // }
+
+    // max-width: 90%;
+  }
 
   // &__slides {
   //   height: 100%;
@@ -25,6 +43,7 @@
     border: 3px dotted $color-blue-light;
     border-radius: 10px;
     padding: 3rem;
+    max-width: 90%;
     /***************
     Interior slide styling below
     ***************/
@@ -42,17 +61,18 @@
     font-size: 2.5rem;
     border-radius: 100%;
     margin: 0 -7rem;
+    background-color: rgba($color-grey-light-2, 0.85);
   }
 }
 
 .glide__slide {
   &__img {
-    // padding: 3rem 0;
     width: 22rem;
     height: 22rem;
     margin: auto;
-    background-color: $color-blue-light;
-    border-radius: 100%;
+    border: 1px solid $color-grey-light-2;
+    border-radius: 10px;
+    background-size: cover;
   }
   // Main testimonial spacing
   & p:first-of-type {

@@ -200,12 +200,6 @@
 
       & .btnFancyText {
         font-size: 3rem;
-        color: $color-grey-dark;
-        text-shadow: none;
-
-        &:hover {
-          color: $color-blue-light;
-        }
       }
     }
   }
@@ -301,15 +295,17 @@
 
 .section-stories {
   // width: 100%;
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   background-color: $color-grey-light-1;
   background-image: url('https://www.transparenttextures.com/patterns/arches.png');
+  margin: auto;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // background-color: $color-grey-light-1;
-  // position: relative;
+  &__button * {
+    // display: inline-block;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
 }
 
 .section-inquire {

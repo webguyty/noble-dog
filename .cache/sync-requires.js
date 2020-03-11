@@ -11,7 +11,7 @@ exports.components = {
   "component---src-pages-index-js": hot(preferDefault(require("/Users/tyleraustin/Desktop/TND/src/pages/index.js"))),
   "component---src-pages-index-main-js": hot(preferDefault(require("/Users/tyleraustin/Desktop/TND/src/pages/indexMain.js"))),
   "component---src-pages-page-2-js": hot(preferDefault(require("/Users/tyleraustin/Desktop/TND/src/pages/page-2.js"))),
-  "component---src-pages-training-info-js": hot(preferDefault(require("/Users/tyleraustin/Desktop/TND/src/pages/trainingInfo.js"))),
-  "component---src-pages-testimonials-js": hot(preferDefault(require("/Users/tyleraustin/Desktop/TND/src/pages/testimonials.js")))
+  "component---src-pages-testimonials-js": hot(preferDefault(require("/Users/tyleraustin/Desktop/TND/src/pages/testimonials.js"))),
+  "component---src-pages-training-info-js": hot(preferDefault(require("/Users/tyleraustin/Desktop/TND/src/pages/trainingInfo.js")))
 }
 

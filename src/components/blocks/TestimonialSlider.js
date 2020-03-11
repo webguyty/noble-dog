@@ -14,19 +14,30 @@ class TestimonialSlider extends Component {
   componentDidMount() {
     new Glide('.glide', {
       perView: 2,
-      gap: 30
+      gap: 30,
+      peak: { before: 0, after: 0 },
+      breakpoints: {
+        1025: {
+          perView: 1
+        }
+      }
     }).mount();
   }
 
   render() {
-    const { testimonials, readMoreLink } = this.props;
+    const { testimonials, readMoreLink, imgPath } = this.props;
 
     const testimonialsList = testimonials.map((data, index) => {
       const textShorter = data.text.slice(0, 370);
 
+      const backgroundImg = {
+        backgroundImage:
+          'url(' + require(`../../images/testimonials/${data.image}`) + ')'
+      };
+
       return (
         <div className='glide__slide' key={index}>
-          <div className='glide__slide__img'></div>
+          <div className='glide__slide__img' style={backgroundImg}></div>
           <p>
             {textShorter}...{' '}
             <a href={readMoreLink} className='glide__slide__readMoreLink'>
@@ -42,7 +53,7 @@ class TestimonialSlider extends Component {
 
     return (
       <div className='glideWrapper'>
-        {console.log(testimonialsList)}
+        {/* {console.log(testimonialsList)} */}
         <div className='glide'>
           <h2 className='glide__heading'>We make people genuinely happy</h2>
           <div className='glide__track' data-glide-el='track'>
