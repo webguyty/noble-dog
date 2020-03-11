@@ -120,6 +120,10 @@
 
     & > div {
       padding: 2rem;
+
+      @include respond(phone) {
+        padding: 2rem 1rem;
+      }
       // min-height: 90rem;
     }
 
@@ -139,21 +143,17 @@
     }
 
     &__composition {
-      // width: 100%;
-      // min-height: 23rem;
-
       @include respond(tab-port) {
-        min-height: 38rem;
+        min-height: 44rem;
       }
 
       @include respond(phone) {
-        min-height: 20rem;
+        min-height: 30rem;
       }
     }
 
     &__behaviorIssues {
       max-width: $site-width;
-
       margin: auto;
 
       & > div:first-child {
@@ -196,6 +196,10 @@
           font-weight: 700;
           display: inline-block;
         }
+      }
+
+      & .btnFancyText {
+        font-size: 3rem;
       }
     }
   }
@@ -261,19 +265,14 @@
       rgba($color-grey-light-1, 1),
       rgba($color-grey-light-1, 0) 15%
     ),
-    // linear-gradient(
-      //   to top,
-      //   rgba($color-grey-light-1, 1),
-      //   rgba($color-grey-light-1, 0) 5%
-      // ),
-      url('../images/sky-grass-bg.jpg') no-repeat center / cover;
+    url('../images/sky-grass-bg.jpg') no-repeat center / cover;
 
   & > h2 {
     @extend .fancyText;
     text-align: center;
     font-size: 7rem;
     margin-bottom: 5rem;
-    // color: rgba($color-black, 0.8);
+
     color: $color-white;
 
     text-shadow: 2px 2px 3px rgba(black, 0.3);
@@ -295,29 +294,40 @@
 }
 
 .section-stories {
-  width: 100%;
-  height: 75rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // width: 100%;
+  padding: 3rem 2rem;
   background-color: $color-grey-light-1;
-  position: relative;
+  background-image: url('https://www.transparenttextures.com/patterns/arches.png');
+  margin: auto;
+
+  &__button * {
+    // display: inline-block;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
 }
 
 .section-inquire {
-  width: 100%;
   min-height: 65rem;
-  padding: 20rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 5rem 2rem;
   background: linear-gradient(
-      100deg,
-      rgba($color-white, 0.7),
-      rgba($color-white, 0.4)
+      80deg,
+      rgba($color-white, 0.3),
+      rgba($color-white, 0.2)
     ),
     url('../images/australian-shepherd-bg.jpg') no-repeat center / cover;
+}
+
+.home__contactForm {
+  max-width: 90rem;
+  margin: auto;
+
+  & .contactForm {
+    padding: 3rem 5rem;
+    border-radius: 10px;
+    background-color: rgba($color-white, 0.9);
+  }
 }
 
 .fillerDiv {
