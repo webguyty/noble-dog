@@ -1,0 +1,54 @@
+.testimonials-full {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+
+  @include respond(tab-port) {
+    grid-template-columns: auto;
+  }
+
+  &:nth-child(odd) {
+    // background-color: $color-grey-light-2;
+    background-image: url('../images/design/patterns/full-bloom.png');
+  }
+
+  &__img {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 35rem;
+    width: 35rem;
+    background-size: cover;
+
+    @include respond(tab-port) {
+      height: 40rem;
+      width: 40rem;
+      margin: auto;
+    }
+  }
+
+  &__text {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: $color-white;
+  }
+
+  &__name {
+    display: inline-block;
+    font-weight: bold;
+  }
+
+  &__icon {
+    color: $color-blue-light;
+    font-size: 2rem;
+    margin: 0 1rem;
+    transform: translateY(-0.3rem);
+  }
+
+  &__location {
+    display: inline-block;
+    font-style: italic;
+  }
+}

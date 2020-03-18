@@ -1,0 +1,39 @@
+.testimonial-page {
+  // min-height: 70rem;
+  padding: 3rem 3rem;
+  background-color: $background-color-1;
+  background-image: $background-image-1;
+
+  @include respond(tab-port) {
+    padding: 3rem 1.5rem;
+  }
+
+  &__wrapper {
+    max-width: $site-width;
+    background-color: $color-white;
+    margin: auto;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+  }
+
+  & h1 {
+    @extend .heading-secondary;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  &__intro {
+    padding: 2rem 8rem;
+  }
+
+  &--yelp {
+    font-weight: bold;
+    color: #c41200;
+
+    &:hover,
+    &:active,
+    &:visited {
+      color: #c41200;
+    }
+  }
+}

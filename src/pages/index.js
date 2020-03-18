@@ -15,7 +15,7 @@ import {
 import Cities from '../components/elements/Cities';
 import BtnFancyText from '../components/buttons/BtnFancyText';
 import ContactForm from '../components/blocks/ContactForm';
-import TestimonialSlider from '../components/blocks/TestimonialSlider';
+import TestimonialSlider from '../components/testimonials/TestimonialSlider';
 import testimonials from '../tnd/testimonials';
 
 // import str from '../tnd/testimonials';

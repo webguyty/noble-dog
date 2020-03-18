@@ -15,7 +15,9 @@
 @import 'components/divider';
 @import 'components/contact-form';
 @import 'components/feature-box';
-@import 'components/slider';
+
+@import 'components/testimonials/testimonials-full';
+@import 'components/testimonials/testimonials-slider';
 
 @import 'components/elements/cities';
 @import 'components/elements/contact-info';
@@ -29,5 +31,5 @@
 @import 'pages/contactUs';
 @import 'pages/home';
 @import 'pages/siteClosed';
-@import 'pages/testimonialPage';
+@import 'pages/testimonials';
 @import 'pages/trainingInfo';

@@ -27,6 +27,9 @@ class TestimonialSlider extends Component {
   render() {
     const { testimonials, readMoreLink, imgPath } = this.props;
 
+    /********************
+     * Process testimonials
+     *******************/
     const testimonialsList = testimonials.map((data, index) => {
       const textShorter = data.text.slice(0, 370);
 
@@ -50,6 +53,10 @@ class TestimonialSlider extends Component {
         </div>
       );
     });
+
+    /********************
+     * Create glide slider with testimonials
+     *******************/
 
     return (
       <div className='glideWrapper'>
