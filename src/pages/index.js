@@ -16,7 +16,7 @@ import Cities from '../components/elements/Cities';
 import BtnFancyText from '../components/buttons/BtnFancyText';
 import ContactForm from '../components/blocks/ContactForm';
 import TestimonialSlider from '../components/testimonials/TestimonialSlider';
-import testimonials from '../tnd/testimonials';
+import testimonialsSlider from '../tnd/testimonialsSlider';
 
 // import str from '../tnd/testimonials';
 
@@ -230,7 +230,7 @@ const IndexPage = () => (
       </section>
       <section className='section-stories'>
         <TestimonialSlider
-          testimonials={testimonials}
+          testimonials={testimonialsSlider}
           imgPath='../../images/testimonials/'
           readMoreLink='/testimonials'
         />

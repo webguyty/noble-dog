@@ -15,7 +15,7 @@ const Testimonials = () => (
   <>
     <Layout>
       <SEO title='Home' />
-      <header className='homeHeader'>
+      <header className='testimonialHeader'>
         <HeaderHero
           // addClass='homeHeader'
           headline='Kind Words'
