@@ -6,7 +6,7 @@ const BtnFancyText = props => {
   return (
     <div>
       <Link
-        className={`btnFancyText btnFancyText--${props.color}`}
+        className={`btnFancyText btnFancyText--${props.color} btnFancyText--${props.size}`}
         to={props.to}
       >
         {props.title}
@@ -18,7 +18,8 @@ const BtnFancyText = props => {
 BtnFancyText.propTypes = {
   title: PropTypes.string,
   to: PropTypes.string,
-  color: PropTypes.string
+  color: PropTypes.string,
+  size: PropTypes.string
 };
 
 export default BtnFancyText;

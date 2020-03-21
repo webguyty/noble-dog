@@ -7,7 +7,7 @@ const TestimonialFull = props => {
   const testimonials = props.testimonials;
 
   const testimonialsList = testimonials.map((data, index) => {
-    // If testimonial has image - process it
+    // If testimonial has image - process it in style
     let backgroundImg = {};
 
     if (data.image === '') {

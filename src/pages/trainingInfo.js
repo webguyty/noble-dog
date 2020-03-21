@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import HeaderHero from '../components/layout/HeaderHero';
 import { FaDog } from 'react-icons/fa';
+import BtnFancyText from '../components/buttons/BtnFancyText';
+
+import testimonials from '../tnd/testimonials';
+import TestimonialSingle from '../components/testimonials/TestimonialSingle';
 
 const SecondPage = () => (
   <Layout>
@@ -39,6 +42,9 @@ const SecondPage = () => (
             no need to put up with, or otherwise tolerate, poor/unwanted
             behavior from your dog.
           </p>
+          <div className='mt-2 mb-5'>
+            <TestimonialSingle testimonials={testimonials} name='Inge C' />
+          </div>
           <p className='text-center'>
             <strong>Do you feel like your dog runs the house? </strong>
           </p>
@@ -144,10 +150,13 @@ const SecondPage = () => (
               <li>Excessive digging</li>
             </div>
           </ul>
-          <div className='text-center'>
-            <a href='#trainingStart' className='fancyLink fancyLink--blue'>
-              Get Started
-            </a>
+          <div className='text-center mb-3'>
+            <BtnFancyText
+              title='Get Started'
+              to='contactUs'
+              color='blue'
+              size='medium'
+            />
           </div>
           <p>
             Whether your dog's particular issue shows up on this list or not, I
@@ -192,6 +201,9 @@ const SecondPage = () => (
             communication. Every dog is different, so we'll also take the time
             to learn about your dog's own psychology and behavior patterns.
           </p>
+          <div className='mt-2 mb-5'>
+            <TestimonialSingle testimonials={testimonials} name='Anthony G' />
+          </div>
           <h3 id='trainingSuccess'>
             Remember that accomplishing this successfully, takes time and
             commitment.

@@ -229,12 +229,16 @@ const IndexPage = () => (
         </div>
       </section>
       <section className='section-stories'>
-        <TestimonialSlider
-          testimonials={testimonialsSlider}
-          imgPath='../../images/testimonials/'
-          readMoreLink='/testimonials'
-        />
-
+        <h2 className='section-stories__heading'>
+          We make people genuinely happy
+        </h2>
+        <div className='section-stories__glideWrapper'>
+          <TestimonialSlider
+            testimonials={testimonialsSlider}
+            imgPath='../../images/testimonials/'
+            readMoreLink='/testimonials'
+          />
+        </div>
         <div className='section-stories__button'>
           <BtnFancyText
             title='Read More Stories'

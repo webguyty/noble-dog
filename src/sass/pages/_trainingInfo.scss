@@ -13,15 +13,19 @@
 
   &__background {
     background-color: $color-grey-light-1;
-    width: 100%;
+    // width: 100%;
     padding: 3rem;
+
+    @include respond(tab-port) {
+      padding: 3rem 1.5rem;
+    }
   }
 
   &__wrapper {
     max-width: 100rem;
     background-color: white;
     margin: auto;
-    padding: 5rem;
+    padding: 3rem;
   }
 
   & h2 {

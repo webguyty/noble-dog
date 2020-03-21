@@ -28,16 +28,25 @@ class TestimonialSlider extends Component {
     const { testimonials, readMoreLink, imgPath } = this.props;
 
     /********************
-     * Process testimonials
+     * Process testimonials and add into a glide slide
      *******************/
     const testimonialsList = testimonials.map((data, index) => {
+      // Limit length of testimonial
       const textShorter = data.text.slice(0, 370);
 
-      const backgroundImg = {
-        backgroundImage:
-          'url(' + require(`../../images/testimonials/${data.image}`) + ')'
-      };
+      // Use Image if testimonial has one and set as background image
+      let backgroundImg = {};
 
+      if (data.image === '') {
+        backgroundImg = { display: 'none' };
+      } else {
+        backgroundImg = {
+          backgroundImage:
+            'url(' + require(`../../images/testimonials/${data.image}`) + ')'
+        };
+      }
+
+      // Return array of glide slides
       return (
         <div className='glide__slide' key={index}>
           <div className='glide__slide__img' style={backgroundImg}></div>
@@ -55,31 +64,28 @@ class TestimonialSlider extends Component {
     });
 
     /********************
-     * Create glide slider with testimonials
+     * Create glide slider with testimonial slides
      *******************/
 
     return (
-      <div className='glideWrapper'>
-        {/* {console.log(testimonialsList)} */}
-        <div className='glide'>
-          <h2 className='glide__heading'>We make people genuinely happy</h2>
-          <div className='glide__track' data-glide-el='track'>
-            <div className='glide__slides'>{testimonialsList}</div>
-          </div>
-          <div className='glide__arrows' data-glide-el='controls'>
-            <button
-              className='glide__arrow glide__arrow--left'
-              data-glide-dir='<'
-            >
-              <FaArrowLeft />
-            </button>
-            <button
-              className='glide__arrow glide__arrow--right'
-              data-glide-dir='>'
-            >
-              <FaArrowRight />
-            </button>
-          </div>
+      <div className='glide'>
+        {/* <h2 className='glide__heading'>We make people genuinely happy</h2> */}
+        <div className='glide__track' data-glide-el='track'>
+          <div className='glide__slides'>{testimonialsList}</div>
+        </div>
+        <div className='glide__arrows' data-glide-el='controls'>
+          <button
+            className='glide__arrow glide__arrow--left'
+            data-glide-dir='<'
+          >
+            <FaArrowLeft />
+          </button>
+          <button
+            className='glide__arrow glide__arrow--right'
+            data-glide-dir='>'
+          >
+            <FaArrowRight />
+          </button>
         </div>
       </div>
     );

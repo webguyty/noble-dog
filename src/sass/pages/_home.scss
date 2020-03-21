@@ -294,11 +294,28 @@
 }
 
 .section-stories {
-  // width: 100%;
   padding: 3rem 2rem;
   background-color: $color-grey-light-1;
   background-image: url('https://www.transparenttextures.com/patterns/arches.png');
   margin: auto;
+
+  &__heading {
+    @extend .heading-secondary;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  &__glideWrapper {
+    max-width: $site-width;
+    margin: auto;
+    padding: 0 3rem;
+
+    @include respond(tab-land) {
+      max-width: 100vw;
+      padding: 0 2rem;
+    }
+  }
 
   &__button * {
     // display: inline-block;

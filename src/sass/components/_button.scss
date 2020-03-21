@@ -42,4 +42,16 @@
       color: $color-blue-light;
     }
   }
+
+  &--small {
+    font-size: 1.6rem;
+  }
+
+  &--medium {
+    font-size: 3rem;
+  }
+
+  &--large {
+    font-size: 6rem;
+  }
 }
