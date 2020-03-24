@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 import HeaderHero from '../components/layout/HeaderHero';
+import DividerIcon from '../components/layout/DividerIcon';
 import { FaDog } from 'react-icons/fa';
 import BtnFancyText from '../components/buttons/BtnFancyText';
 
@@ -21,154 +22,199 @@ const SecondPage = () => (
 				"
         />
       </header>
+      <div className='trainingInfo__dividerIcon'>
+        <DividerIcon destination='#donotblame' />
+      </div>
       <div className='trainingInfo__background'>
         <div className='trainingInfo__wrapper trainingInfo'>
-          <h2 className='heading-secondary'>
-            Don't blame yourself or your dog! <br />
-            <span className='headerSmallerText'>
-              Behavior issues are VERY common. They are often a result of
-              conditioning, genetics, separation anxiety, and several other
-              factors.
-            </span>
-          </h2>
-          <h3 className='text-center py-5'>
-            The good news is: that regardless of the dog's age or past, they CAN
-            be overcome!
-          </h3>
-          <p>
-            In every dog, there's one that's loving and able to behave well in
-            any setting. My goal with “The Noble Dog” is to help bring out that
-            part of the dog's personality, and let it dominate. There is simply
-            no need to put up with, or otherwise tolerate, poor/unwanted
-            behavior from your dog.
-          </p>
-          <div className='mt-2 mb-5'>
-            <TestimonialSingle testimonials={testimonials} name='Inge C' />
+          <div className='trainingInfo__introBlock'>
+            <div className='trainingInfo__introBlock--text'>
+              <h2 className='trainingInfo__mainHeading' id='donotblame'>
+                Don't blame yourself or your dog!
+              </h2>
+              <h3 className='trainingInfo__secondaryHeading'>
+                Behavior issues are VERY common. <br />
+                <br />
+                They are often a result of conditioning, genetics, and several
+                other factors.
+              </h3>
+
+              <h3 className='text-center py-5'>
+                The good news is: that regardless of the dog's age or past, they
+                CAN be overcome!
+              </h3>
+              <p>
+                In every dog, there's one that's loving and able to behave well
+                in any setting. My goal with “The Noble Dog” is to help bring
+                out that part of the dog's personality, and let it dominate.
+                There is simply no need to put up with, or otherwise tolerate,
+                poor/unwanted behavior from your dog.
+              </p>
+            </div>
           </div>
-          <p className='text-center'>
-            <strong>Do you feel like your dog runs the house? </strong>
-          </p>
-          <p className='text-center'>
-            <strong>
-              Do you often feel like your dog is “in control” instead of you?
-            </strong>
-          </p>
-          <p className='text-center'>
-            <strong>It's time to take back control NOW.</strong>
-          </p>
-          <p>
-            I specialize in teaching both you as well as your dog how to
-            coexist, with the proper order and hierarchy. An important (and
-            often-missed) part of training is involvement,{' '}
-            <strong>and yes, training the owner.</strong>
-          </p>
-          <p>
-            Through my proven methods, I'll teach you how to be an effective,
-            loving leader for your dog.
-          </p>
+          <div className='trainingInfo__questionBlock'>
+            <div className='trainingInfo__questionBlock--border'>
+              <p>Do you feel like your dog runs the house?</p>
+              <p>
+                Do you often feel like your dog is “in control” instead of you?
+              </p>
+              <p>
+                It's time to take back control{' '}
+                <span className='trainingInfo__questionBlock--now'>NOW</span>
+              </p>
+            </div>
+          </div>
+          <div className='trainingInfo__textBlock'>
+            <p>
+              I specialize in teaching both you as well as your dog how to
+              coexist, with the proper order and hierarchy. An important (and
+              often-missed) part of training is involvement,{' '}
+              <strong>and yes, training the owner.</strong>
+            </p>
+            <p>
+              Through my proven methods, I'll teach you how to be an effective,
+              loving leader for your dog.
+            </p>
+          </div>
+
+          {/* <div className='mt-2 mb-5'> */}
+          <TestimonialSingle testimonials={testimonials} name='Inge C' />
+          {/* </div> */}
+
           <ul className='trainingInfo__tableOfContents'>
             <h3 className='heading-tertiary'>Table Of Contents</h3>
-            <h4>Training methods:</h4>
-            <li>
-              <FaDog />
-              <a href='#behaviorProblems'> Common behavior problems</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingMethods'> Training methods I use</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingSuccess'>Keys to success</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingExample'>An example of training</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingTools'>Tools for training</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingExpectations'>What can you expect</a>
-            </li>
-            <li>
-              <FaDog />{' '}
-              <a href='#trainingLength'>How long will it take to get results</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingExpectations'>What can you expect</a>
-            </li>
-            <li>
-              <FaDog />{' '}
-              <a href='#trainingOwner'>Do you really train the owner?</a>
-            </li>
-            <li>
-              <FaDog />{' '}
-              <a href='#trainingBestRates'>Best training in Ventura County</a>
-            </li>
-            <h4 className='mt-4'>Training prices, service area, and hours:</h4>
-            <li>
-              <FaDog /> <a href='#trainingLocation'>Service area and hours</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingPrices'>Prices</a>
-            </li>
-            <li>
-              <FaDog />{' '}
-              <a href='#trainingCancellation'>Session cancellation policy</a>
-            </li>
-            <li>
-              <FaDog /> <a href='#trainingStart'>Get started with training</a>
-            </li>
-          </ul>
-          <p>
-            In no time at all, we will have your dog treating you and your home
-            with respect and proper behavior. It's a matter of patience,
-            conditioning, and a positive training environment.
-          </p>
-          <h3 id='behaviorProblems'>
-            <u>
-              Here are the more common problems that most dog owners experience
-              with their pets:
-            </u>
-          </h3>
-          <ul className='trainingInfo--listGrid'>
-            <div>
-              <li>Defiance</li>
-              <li>Aggression (various forms)</li>
-              <li>Walking properly</li>
-              <li>Dominance</li>
-              <li>Destructive behavior</li>
-              <li>Running away</li>
-              <li>Chewing</li>
-              <li>Shyness</li>
+
+            <div className='trainingInfo__tableOfContents__grid'>
+              <div className='trainingInfo__tableOfContents__grid--1'>
+                <h4>Training methods:</h4>
+                <li>
+                  <FaDog />
+                  <a href='#behaviorProblems'> Common behavior problems</a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingMethods'> Training methods I use</a>
+                </li>
+                <li>
+                  <FaDog /> <a href='#trainingSuccess'>Keys to success</a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingExample'>An example of training</a>
+                </li>
+                <li>
+                  <FaDog /> <a href='#trainingTools'>Tools for training</a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingExpectations'>What can you expect</a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingLength'>
+                    How long will it take to get results
+                  </a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingExpectations'>What can you expect</a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingOwner'>Do you really train the owner?</a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingBestRates'>
+                    Best training in Ventura County
+                  </a>
+                </li>
+              </div>
+              <div className='trainingInfo__tableOfContents__grid--2'>
+                <h4>Training prices, service area, and hours:</h4>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingLocation'>Service area and hours</a>
+                </li>
+                <li>
+                  <FaDog /> <a href='#trainingPrices'>Prices</a>
+                </li>
+                <li>
+                  <FaDog />{' '}
+                  <a href='#trainingCancellation'>
+                    Session cancellation policy
+                  </a>
+                </li>
+                <li>
+                  <FaDog /> <a href='#trainingStart'>Get started</a>
+                </li>
+              </div>
             </div>
-            <div>
-              <li>Jumping on people and furniture</li>
-              <li>Stealing food</li>
-              <li>“Bogarting” items</li>
-              <li>Separation anxiety</li>
-              <li>Excessive barking</li>
-              <li>Urinating indoors</li>
-              <li>Excessive digging</li>
-            </div>
+            {/* End of grid */}
           </ul>
-          <div className='text-center mb-3'>
-            <BtnFancyText
-              title='Get Started'
-              to='contactUs'
-              color='blue'
-              size='medium'
-            />
+          <div className='trainingInfo__textBlock'>
+            <p>
+              In no time at all, we will have your dog treating you and your
+              home with respect and proper behavior. It's a matter of{' '}
+              <strong>
+                patience, conditioning, and a positive training environment.
+              </strong>
+            </p>
           </div>
-          <p>
-            Whether your dog's particular issue shows up on this list or not, I
-            can help! Beyond that, I'll ensure that you end up with a dog who
-            will also obey simple commands too!
-          </p>
-          <p>
-            While I specialize in discipline and behavior issues rather than
-            “obedience” training, I can work with your pet to obey any set of
-            commands you desire. All it takes is time and patience.
-          </p>
-          <p>Would you like get started? Just tell us about your dog!</p>
+          <div className='trainingInfo__behaviorProblems'>
+            <div className='trainingInfo__behaviorProblems--border'>
+              <h3 id='behaviorProblems'>
+                Here are the more common problems that most dog owners
+                experience with their pets:
+              </h3>
+              <ul className='trainingInfo--listGrid'>
+                <div>
+                  <li>Defiance</li>
+                  <li>Aggression (various forms)</li>
+                  <li>Walking properly</li>
+                  <li>Dominance</li>
+                  <li>Destructive behavior</li>
+                  <li>Running away</li>
+                  <li>Chewing</li>
+                  <li>Shyness</li>
+                </div>
+                <div>
+                  <li>Jumping on people and furniture</li>
+                  <li>Stealing food</li>
+                  <li>“Bogarting” items</li>
+                  <li>Separation anxiety</li>
+                  <li>Excessive barking</li>
+                  <li>Urinating indoors</li>
+                  <li>Excessive digging</li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          {/* End of behavior problems */}
+          <div className='trainingInfo__textBlock'>
+            <p>
+              Whether your dog's particular issue shows up on this list or not,
+              I can help! Beyond that, I'll ensure that you end up with a dog
+              who will also obey simple commands too!
+            </p>
+            <p>
+              While I specialize in discipline and behavior issues rather than
+              “obedience” training, I can work with your pet to obey any set of
+              commands you desire. All it takes is time and patience.
+            </p>
+          </div>
+          <div className='trainingInfo__getStarted'>
+            <div className='trainingInfo__getStarted--grid'>
+              <p>Would you like get started? </p>
+              <BtnFancyText
+                title='Tell us about your dog'
+                to='contactUs'
+                color='gold'
+                size='medium'
+              />
+            </div>
+          </div>
+
           <h3 id='trainingMethods'>So What Training Methods Do I Use?</h3>
           <p>
             I believe in utilizing training methods that are positive, simple
@@ -201,9 +247,11 @@ const SecondPage = () => (
             communication. Every dog is different, so we'll also take the time
             to learn about your dog's own psychology and behavior patterns.
           </p>
+
           <div className='mt-2 mb-5'>
             <TestimonialSingle testimonials={testimonials} name='Anthony G' />
           </div>
+
           <h3 id='trainingSuccess'>
             Remember that accomplishing this successfully, takes time and
             commitment.
@@ -239,6 +287,7 @@ const SecondPage = () => (
             what the dog wants. And believe it or not, that is very rarely
             treats. Your dog wants your love and attention more than treats.{' '}
           </p>
+
           <h3 id='trainingExample'>Here's an example</h3>
           <p>
             I will often ask a dog I work with to sit and stay before exiting
@@ -268,6 +317,7 @@ const SecondPage = () => (
             Remember, I handle every dog with the same degree of love and
             attention I do with my very own. As ANY good trainer should.
           </p>
+
           <h3 id='trainingTools'>What tools do I use?</h3>
           <p>
             To me, the most powerful tool, at the risk of sounding cliché', is
@@ -288,6 +338,7 @@ const SecondPage = () => (
             evaluation, we can discuss other tools. Including any you may be
             currently using with your dog, or have used in the past.
           </p>
+
           <h3 className='pb-3' id='trainingExpectations'>
             What can you expect?
           </h3>
@@ -414,94 +465,102 @@ const SecondPage = () => (
           </h4>
           <p>Saturday and Sunday from 10AM to 7PM</p>
 
-          <h3 id='trainingPrices'>Training Package Options and Pricing</h3>
-
-          <h4>
-            Basic training package <strong>$325</strong>
-          </h4>
-          <p>
-            <strong>3 personal training sessions</strong>
-            <br />
-            Great for people looking to get started on the right foot with
-            training with their dog. (Not suitable for moderate aggression
-            issues)
-          </p>
-          <ul>
-            <li>Loose leash walking</li>
-            <li>Good socialization skills</li>
-            <li>Build your leadership</li>
-            <li>Basic Commands (sit, stay, heel, lie down)</li>
-            <li>
-              Basic good behavior (not jumping on people, staying off furniture,
-              quieting down barking)
-            </li>
-            <li>Intro to recall (coming when called)</li>
-            <li>Start working on anxiety issues</li>
-            <li>Invitation to meet-ups</li>
-          </ul>
-
-          <h4>
-            Noble dog training package <strong>$525</strong>
-          </h4>
-          <p>
-            <strong>6 personal training sessions</strong>
-            <br />
-            Great for people looking to get a great handle on their dogs
-            behavior in a large variety of situations. Suitable match for dogs
-            with moderate behavior and aggression issues.
-          </p>
-          <ul>
-            <li>Loose leash walking</li>
-            <li>Good socialization skills</li>
-            <li>Build your leadership</li>
-            <li>Basic Commands (sit, stay, heel, lie down)</li>
-            <li>
-              Basic good behavior (not jumping on people, staying off furniture,
-              quieting down barking)
-            </li>
-            <li>
-              Get behavior issues under control (dominance, aggression towards
-              dogs and other people, defiance)
-            </li>
-            <li>
-              Build strong recall skills and a reliable "come" in environments
-              with many distractions
-            </li>
-            <li>Greatly calm anxious dogs</li>
-            <li>Invitation to meet-ups</li>
-          </ul>
-
-          <h4>
-            Advanced training package <strong>$725</strong>
-          </h4>
-          <p>
-            <strong>9 personal training sessions</strong>
-            <br />
-            Great for people with dogs with intense behavioral issues looking to
-            fully include their dog in their lives, both around home and out in
-            public. "Mastering the basics" with dogs who need a little extra
-            help.
-          </p>
-          <ul>
-            <li>Loose leash walking</li>
-            <li>Good socialization skills</li>
-            <li>Build your leadership</li>
-            <li>Basic Commands (sit, stay, heel, lie down)</li>
-            <li>
-              Basic good behavior (not jumping on people, staying off furniture,
-              quieting down barking)
-            </li>
-            <li>
-              Get behavior issues under control (dominance, aggression towards
-              dogs and other people, defiance)
-            </li>
-            <li>
-              Build strong recall skills and a reliable "come" in environments
-              with many distractions
-            </li>
-            <li>Greatly calm anxious dogs</li>
-            <li>Invitation to meet-ups</li>
-          </ul>
+          <div className='trainingInfo__packages'>
+            <h3 id='trainingPrices'>Training Package Options and Pricing</h3>
+            <div className='trainingInfo__packages__grid'>
+              <div className='trainingInfo__package trainingInfo__package--basic'>
+                <h4>
+                  Basic training package <strong>$325</strong>
+                </h4>
+                <p>
+                  <strong>3 personal training sessions</strong>
+                  <br />
+                  Great for people looking to get started on the right foot with
+                  training with their dog. (Not suitable for moderate aggression
+                  issues)
+                </p>
+                <ul>
+                  <li>Loose leash walking</li>
+                  <li>Good socialization skills</li>
+                  <li>Build your leadership</li>
+                  <li>Basic Commands (sit, stay, heel, lie down)</li>
+                  <li>
+                    Basic good behavior (not jumping on people, staying off
+                    furniture, quieting down barking)
+                  </li>
+                  <li>Intro to recall (coming when called)</li>
+                  <li>Start working on anxiety issues</li>
+                  <li>Invitation to meet-ups</li>
+                </ul>
+              </div>
+              <div className='trainingInfo__package trainingInfo__package--noble'>
+                <h4>
+                  Noble dog training package <strong>$525</strong>
+                </h4>
+                <p>
+                  <strong>6 personal training sessions</strong>
+                  <br />
+                  Great for people looking to get a great handle on their dogs
+                  behavior in a large variety of situations. Suitable match for
+                  dogs with moderate behavior and aggression issues.
+                </p>
+                <ul>
+                  <li>Loose leash walking</li>
+                  <li>Good socialization skills</li>
+                  <li>Build your leadership</li>
+                  <li>Basic Commands (sit, stay, heel, lie down)</li>
+                  <li>
+                    Basic good behavior (not jumping on people, staying off
+                    furniture, quieting down barking)
+                  </li>
+                  <li>
+                    Get behavior issues under control (dominance, aggression
+                    towards dogs and other people, defiance)
+                  </li>
+                  <li>
+                    Build strong recall skills and a reliable "come" in
+                    environments with many distractions
+                  </li>
+                  <li>Greatly calm anxious dogs</li>
+                  <li>Invitation to meet-ups</li>
+                </ul>
+              </div>
+              <div className='trainingInfo__package trainingInfo__package--advanced'>
+                <h4>
+                  Advanced training package <strong>$725</strong>
+                </h4>
+                <p>
+                  <strong>9 personal training sessions</strong>
+                  <br />
+                  Great for people with dogs with intense behavioral issues
+                  looking to fully include their dog in their lives, both around
+                  home and out in public. "Mastering the basics" with dogs who
+                  need a little extra help.
+                </p>
+                <ul>
+                  <li>Loose leash walking</li>
+                  <li>Good socialization skills</li>
+                  <li>Build your leadership</li>
+                  <li>Basic Commands (sit, stay, heel, lie down)</li>
+                  <li>
+                    Basic good behavior (not jumping on people, staying off
+                    furniture, quieting down barking)
+                  </li>
+                  <li>
+                    Get behavior issues under control (dominance, aggression
+                    towards dogs and other people, defiance)
+                  </li>
+                  <li>
+                    Build strong recall skills and a reliable "come" in
+                    environments with many distractions
+                  </li>
+                  <li>Greatly calm anxious dogs</li>
+                  <li>Invitation to meet-ups</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* End of packages */}
 
           <h3 id='trainingCancellation'>
             Training Session cancellation policy

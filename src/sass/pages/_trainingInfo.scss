@@ -1,3 +1,4 @@
+$trainingInfo-padding: 3rem;
 .trainingInfo {
   &__header {
     @extend .headerHero;
@@ -11,30 +12,37 @@
     }
   }
 
+  &__dividerIcon .dividerIcon {
+    background-color: $color-grey-dark-3;
+  }
+
   &__background {
-    background-color: $color-grey-light-1;
+    // background-color: $color-grey-light-1;
+    background-color: #f4f2f2;
+    background-image: url('https://www.transparenttextures.com/patterns/reticular-tissue.png');
     // width: 100%;
     padding: 3rem;
 
     @include respond(tab-port) {
-      padding: 3rem 1.5rem;
+      padding: 0;
     }
   }
 
   &__wrapper {
-    max-width: 100rem;
+    // $trainingInfo-padding: 3rem;
+    max-width: $site-width;
     background-color: white;
     margin: auto;
-    padding: 3rem;
+    padding: 0 $trainingInfo-padding;
+    border-radius: 10px;
   }
+
+  /***************
+  Headings
+  ***************/
 
   & h2 {
     text-align: center;
-
-    & > .headerSmallerText {
-      font-size: 2.2rem;
-      text-transform: none;
-    }
   }
 
   & h3 {
@@ -54,23 +62,102 @@
     margin-bottom: 2rem;
   }
 
+  &__introBlock {
+    margin-left: -$trainingInfo-padding;
+    margin-right: -$trainingInfo-padding;
+    background-image: url('../images/design/woodbg.jpg');
+    padding: $trainingInfo-padding;
+
+    &--text {
+      background-color: rgba($color-white, 0.9);
+      padding: 3rem 5rem;
+      border-radius: 10px;
+      padding-bottom: 6rem;
+    }
+
+    & p {
+      margin-bottom: 0;
+      font-size: 1.8;
+    }
+  }
+
+  &__mainHeading {
+    @extend .heading-secondary;
+    color: $color-grey-dark-3;
+    text-align: center;
+    padding: 3rem;
+    padding-bottom: 0rem;
+  }
+
+  &__secondaryHeading {
+    @extend .heading-secondary;
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: none;
+  }
+
+  &__questionBlock {
+    text-align: center;
+    font-weight: bold;
+    color: $color-white;
+    padding: 2rem $trainingInfo-padding;
+    background-color: $color-blue-light;
+
+    // margin-top: 3rem;
+    // margin-bottom: 3rem;
+    margin-left: -$trainingInfo-padding;
+    margin-right: -$trainingInfo-padding;
+
+    &--border {
+      border: 5px dotted $color-white;
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    & p {
+      font-size: 2rem;
+    }
+
+    &--now {
+      color: $color-gold;
+      font-size: 2.2rem;
+    }
+  }
+
+  &__textBlock {
+    padding: 5rem;
+
+    & p {
+      font-size: 1.8rem;
+    }
+  }
+
   // List styling
   & ul,
   ol {
     font-size: 1.8rem;
     // margin-left: 3rem;
     // margin: 2rem 0;
-    margin: 2rem 0 2rem 3rem;
+    margin: 2rem 0 0 3rem;
   }
 
   &__tableOfContents {
     & h3 {
-      color: $color-blue-light;
+      // color: $color-blue-light;
       text-decoration: underline;
+      margin-bottom: 1rem;
     }
 
+    &__grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
     & h4 {
-      text-transform: uppercase;
+      // text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: bold;
+      margin-bottom: 1rem;
     }
 
     list-style: none;
@@ -94,15 +181,107 @@
     }
   }
 
+  &__behaviorProblems {
+    background-color: $color-blue-light;
+    color: $color-white;
+    padding: 2rem $trainingInfo-padding;
+    margin-left: -$trainingInfo-padding;
+    margin-right: -$trainingInfo-padding;
+
+    &--border {
+      border: 5px dotted $color-white;
+      border-radius: 10px;
+      padding: 2rem;
+      padding-bottom: 0;
+    }
+
+    & h3 {
+      padding: 0;
+      text-transform: capitalize;
+      font-size: 2.5rem;
+    }
+    & ul {
+      margin: 0;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+  }
+
   &--listGrid {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     @include respond(phone) {
       grid-template-columns: auto;
       justify-content: start;
       margin-left: 5rem !important;
+    }
+  }
+
+  &__getStarted {
+    max-width: 75rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    padding: 2rem;
+    background-image: url('../images/design/woodbg.jpg');
+
+    border: 4px solid $color-gold;
+    border-radius: 10px;
+
+    &--grid {
+      display: grid;
+      // grid-template-columns: auto auto;
+      grid-template-columns: repeat(auto-fit);
+      align-items: center;
+      background-color: rgba($color-white, 0.93);
+      padding: 1rem;
+      border-radius: 10px;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    & p {
+      margin: 0 !important;
+      font-size: 2.3rem;
+      font-weight: bold;
+    }
+
+    & .btnFancyText {
+      text-shadow: none;
+      // transition: font-size 1s;
+
+      &:hover {
+        text-shadow: 1px 1px 1px rgba($color-black, 0.3);
+        // font-size: 3rem;
+      }
+    }
+  }
+
+  /****************
+  Training Packages section
+  ****************/
+  &__packages {
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+    }
+  }
+
+  &__package {
+    padding: 1rem;
+    border: 1px solid black;
+    &--basic {
+    }
+
+    &--noble {
+    }
+
+    &--advanced {
     }
   }
 }
