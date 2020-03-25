@@ -339,25 +339,45 @@ $trainingInfo-padding: 3rem;
     margin-bottom: 10rem;
 
     & h3 {
+      // @extend .heading-secondary;
+      font-size: 3.5rem;
+      padding-bottom: 0rem;
+
+      color: $color-blue-light;
+      text-transform: capitalize;
     }
 
     &__introP {
+      text-align: center;
+      font-size: 1.8rem;
+      padding: 1rem 6rem;
+      padding-bottom: 3rem;
     }
 
     &__grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 2.5rem;
+
+      @include respond(tab-land) {
+        grid-template-columns: auto;
+        justify-content: center;
+      }
     }
   }
 
   &__package {
-    // padding: 1rem;
-    border: 1px solid black;
+    border: 1px solid rgb(142, 142, 142);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 1rem 1.5rem 2rem rgba($color-black, 0.15);
-    // padding-bottom: 1rem;
+    max-width: 50rem;
+
+    @include respond(tab-land) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
 
     &__title {
       @extend .fancyText;
@@ -370,6 +390,10 @@ $trainingInfo-padding: 3rem;
       text-align: center;
       height: 22rem;
       border-radius: 10px 10px 0 0;
+
+      @include respond(tab-port) {
+        min-height: 27rem;
+      }
 
       & h4 {
         font-size: 2.7rem;
@@ -394,9 +418,11 @@ $trainingInfo-padding: 3rem;
       font-weight: bold;
       padding-top: 1rem;
       text-align: center;
+      // background-color: rgba($color-white, 0.7);
 
       & p {
         font-size: 1.8rem;
+        color: black;
       }
     }
 
@@ -404,7 +430,7 @@ $trainingInfo-padding: 3rem;
       min-height: 20rem;
       padding: 1rem 2rem;
       margin: 0 1rem;
-      background-color: rgba($color-white, 0.5);
+      background-color: rgba($color-white, 0.7);
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -455,6 +481,9 @@ $trainingInfo-padding: 3rem;
 
     &--noble {
       transform: scale(1.04);
+      @include respond(tab-land) {
+        transform: scale(1);
+      }
 
       & .trainingInfo__package__title {
         background-image: url('../images/design/card/adorable-dog.jpg');

@@ -496,7 +496,13 @@ const SecondPage = () => (
 
           <div className='trainingInfo__packages'>
             <h3 id='trainingPrices'>Training Packages</h3>
-            <p className='trainingInfo__packages__introP'></p>
+            <p className='trainingInfo__packages__introP'>
+              We can help suggest which training package may be best for your
+              situation and goals.
+              <br />
+              <strong>See below</strong> on how to schedule and introduction
+              training session.
+            </p>
             <div className='trainingInfo__packages__grid'>
               <div className='trainingInfo__package trainingInfo__package--basic'>
                 <div className='trainingInfo__package__title'>
