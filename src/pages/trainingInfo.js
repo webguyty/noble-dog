@@ -224,6 +224,7 @@ const SecondPage = () => (
             </div>
           </div>
           {/* End of behavior problems */}
+
           <div className='trainingInfo__textBlock'>
             <div className='trainingInfo__textBlock__grid'>
               <div className='trainingInfo__textBlock__grid__text'>
@@ -260,18 +261,20 @@ const SecondPage = () => (
             </div>
           </div>
 
-          <div className='trainingInfo__textBlock trainingInfo__textBlock--talkAboutTraining'>
-            <h2>Let's talk about our training methods</h2>
-            <p>
-              If you are interested in reading about how our training methods
-              work please continue reading. We talk about how we can help get
-              you the best results in training and how to teach your dog how to
-              have a friendlier disposition (or any other behavior goals you may
-              have!).
-            </p>
-            <p style={{ textAlign: 'center' }}>
-              <strong>Find information on training packages below</strong>
-            </p>
+          <div className='trainingInfo__greyDiv'>
+            <div className='trainingInfo__talkAboutTraining'>
+              <h2>Let's talk about our training methods</h2>
+              <p>
+                If you are interested in reading about how our training methods
+                work please continue reading. We talk about how we can help get
+                you the best results in training and how to teach your dog how
+                to have a friendlier disposition (or any other behavior goals
+                you may have!).
+              </p>
+              <p style={{ textAlign: 'center' }}>
+                <strong>Find information on training packages below</strong>
+              </p>
+            </div>
           </div>
 
           <div className='trainingInfo__methods'>
