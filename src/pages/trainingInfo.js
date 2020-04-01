@@ -45,10 +45,11 @@ const SecondPage = () => (
               </h3>
               <p>
                 In every dog, there's one that's loving and able to behave well
-                in any setting. My goal with “The Noble Dog” is to help bring
-                out that part of the dog's personality, and let it dominate.
-                There is simply no need to put up with, or otherwise tolerate,
-                poor/unwanted behavior from your dog.
+                in any setting. My goal with{' '}
+                <span className='fancyText'>The Noble Dog</span> is to help
+                bring out that part of the dog's personality, and let it
+                dominate. There is simply no need to put up with, or otherwise
+                tolerate, poor/unwanted behavior from your dog.
               </p>
             </div>
           </div>
@@ -65,16 +66,27 @@ const SecondPage = () => (
             </div>
           </div>
           <div className='trainingInfo__textBlock'>
-            <p>
-              I specialize in teaching both you as well as your dog how to
-              coexist, with the proper order and hierarchy. An important (and
-              often-missed) part of training is involvement,{' '}
-              <strong>and yes, training the owner.</strong>
-            </p>
-            <p>
-              Through my proven methods, I'll teach you how to be an effective,
-              loving leader for your dog.
-            </p>
+            <div className='trainingInfo__textBlock__grid'>
+              <div className='trainingInfo__textBlock__grid__text'>
+                <p>
+                  I specialize in teaching both you as well as your dog how to
+                  coexist, with the proper order and hierarchy. An important
+                  (and often-missed) part of training is involvement,{' '}
+                  <strong>and yes, training the owner.</strong>
+                </p>
+                <p>
+                  Through my proven methods, I'll teach you how to be an
+                  effective, loving leader for your dog.
+                </p>
+              </div>
+              <div className='trainingInfo__textBlock__grid__image'>
+                <img
+                  className='img1'
+                  src={require('../images/design/dog-family-fountain.jpg')}
+                />
+              </div>
+            </div>
+            {/* End of grid */}
           </div>
 
           {/* <div className='mt-2 mb-5'> */}
@@ -82,90 +94,106 @@ const SecondPage = () => (
           {/* </div> */}
 
           <div className='trainingInfo__tableOfContents'>
-            <h3 className='heading-tertiary'>Table Of Contents</h3>
+            <div className='trainingInfo__tableOfContents__innerBorder'>
+              <h3 className='heading-tertiary'>Table Of Contents</h3>
 
-            <div className='trainingInfo__tableOfContents__grid'>
-              <div className='trainingInfo__tableOfContents__grid--1'>
-                <ul>
-                  <h4>Training methods:</h4>
-                  <li>
-                    <FaDog />
-                    <a href='#behaviorProblems'> Common behavior problems</a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingMethods'> Training methods I use</a>
-                  </li>
-                  <li>
-                    <FaDog /> <a href='#trainingSuccess'>Keys to success</a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingExample'>An example of training</a>
-                  </li>
-                  <li>
-                    <FaDog /> <a href='#trainingTools'>Tools for training</a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingExpectations'>What can you expect</a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingLength'>
-                      How long will it take to get results
-                    </a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingExpectations'>What can you expect</a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingOwner'>Do you really train the owner?</a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingBestRates'>
-                      Best training in Ventura County
-                    </a>
-                  </li>
-                </ul>
+              <div className='trainingInfo__tableOfContents__grid'>
+                <div className='trainingInfo__tableOfContents__grid--1'>
+                  <ul>
+                    <h4>Training methods:</h4>
+                    <li>
+                      <FaDog />
+                      <a href='#behaviorProblems'> Common behavior problems</a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingMethods'> Training methods I use</a>
+                    </li>
+                    <li>
+                      <FaDog /> <a href='#trainingSuccess'>Keys to success</a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingExample'>An example of training</a>
+                    </li>
+                    <li>
+                      <FaDog /> <a href='#trainingTools'>Tools for training</a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingExpectations'>What can you expect</a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingLength'>
+                        How long will it take to get results
+                      </a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingExpectations'>What can you expect</a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingOwner'>
+                        Do you really train the owner?
+                      </a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingBestRates'>
+                        Best training in Ventura County
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='trainingInfo__tableOfContents__grid--2'>
+                  <ul>
+                    <h4>Training prices, service area, and hours:</h4>
+
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingLocation'>Service area and hours</a>
+                    </li>
+                    <li>
+                      <FaDog /> <a href='#trainingPrices'>Prices</a>
+                    </li>
+                    <li>
+                      <FaDog />{' '}
+                      <a href='#trainingCancellation'>
+                        Session cancellation policy
+                      </a>
+                    </li>
+                    <li>
+                      <FaDog /> <a href='#trainingStart'>Get started</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className='trainingInfo__tableOfContents__grid--2'>
-                <ul>
-                  <h4>Training prices, service area, and hours:</h4>
+              {/* End of grid */}
+            </div>
+          </div>
 
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingLocation'>Service area and hours</a>
-                  </li>
-                  <li>
-                    <FaDog /> <a href='#trainingPrices'>Prices</a>
-                  </li>
-                  <li>
-                    <FaDog />{' '}
-                    <a href='#trainingCancellation'>
-                      Session cancellation policy
-                    </a>
-                  </li>
-                  <li>
-                    <FaDog /> <a href='#trainingStart'>Get started</a>
-                  </li>
-                </ul>
+          <div className='trainingInfo__textBlock'>
+            <div className='trainingInfo__textBlock__grid'>
+              <div className='trainingInfo__textBlock__grid__image'>
+                <img
+                  className='img2'
+                  src={require('../images/design/dog-group-muzzles.jpg')}
+                />
+              </div>
+              <div className='trainingInfo__textBlock__grid__text'>
+                <p>
+                  In no time at all, we will have your dog treating you and your
+                  home with respect and proper behavior. It's a matter of{' '}
+                  <strong>
+                    patience, conditioning, and a positive training environment.
+                  </strong>
+                </p>
               </div>
             </div>
-            {/* End of grid */}
           </div>
-          <div className='trainingInfo__textBlock'>
-            <p>
-              In no time at all, we will have your dog treating you and your
-              home with respect and proper behavior. It's a matter of{' '}
-              <strong>
-                patience, conditioning, and a positive training environment.
-              </strong>
-            </p>
-          </div>
+
           <div className='trainingInfo__behaviorProblems'>
             <div className='trainingInfo__behaviorProblems--border'>
               <h3 id='behaviorProblems'>
@@ -197,17 +225,29 @@ const SecondPage = () => (
           </div>
           {/* End of behavior problems */}
           <div className='trainingInfo__textBlock'>
-            <p>
-              Whether your dog's particular issue shows up on this list or not,
-              I can help! Beyond that, I'll ensure that you end up with a dog
-              who will also obey simple commands too!
-            </p>
-            <p>
-              While I specialize in discipline and behavior issues rather than
-              “obedience” training, I can work with your pet to obey any set of
-              commands you desire. All it takes is time and patience.
-            </p>
+            <div className='trainingInfo__textBlock__grid'>
+              <div className='trainingInfo__textBlock__grid__text'>
+                <p>
+                  Whether your dog's particular issue shows up on this list or
+                  not, I can help! Beyond that, I'll ensure that you end up with
+                  a dog who will also obey simple commands too!
+                </p>
+                <p>
+                  While I specialize in discipline and behavior issues rather
+                  than “obedience” training, I can work with your pet to obey
+                  any set of commands you desire. All it takes is time and
+                  patience.
+                </p>
+              </div>
+              <div className='trainingInfo__textBlock__grid__image'>
+                <img
+                  className='img3'
+                  src={require('../images/design/cattle-dogs-and-me.jpg')}
+                />
+              </div>
+            </div>
           </div>
+
           <div className='trainingInfo__getStarted'>
             <div className='trainingInfo__getStarted--grid'>
               <p>Would you like get started? </p>
@@ -218,6 +258,20 @@ const SecondPage = () => (
                 size='medium'
               />
             </div>
+          </div>
+
+          <div className='trainingInfo__textBlock trainingInfo__textBlock--talkAboutTraining'>
+            <h2>Let's talk about our training methods</h2>
+            <p>
+              If you are interested in reading about how our training methods
+              work please continue reading. We talk about how we can help get
+              you the best results in training and how to teach your dog how to
+              have a friendlier disposition (or any other behavior goals you may
+              have!).
+            </p>
+            <p style={{ textAlign: 'center' }}>
+              <strong>Find information on training packages below</strong>
+            </p>
           </div>
 
           <div className='trainingInfo__methods'>

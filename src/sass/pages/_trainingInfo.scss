@@ -13,7 +13,7 @@ $trainingInfo-padding: 3rem;
   }
 
   &__dividerIcon .dividerIcon {
-    background-color: $color-grey-dark-3;
+    background-color: rgb(60, 60, 60);
   }
 
   &__background {
@@ -128,7 +128,7 @@ $trainingInfo-padding: 3rem;
   }
 
   /***********************
-  Text Block Classes
+  Text Block Classes - used in the first part of page
   ***********************/
 
   &__textBlock {
@@ -136,33 +136,79 @@ $trainingInfo-padding: 3rem;
 
     & p {
       font-size: 1.8rem;
+      text-align: justify;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      // justify-content: space-evenly;
+      align-items: center;
+
+      @include respond(tab-port) {
+        grid-template-columns: 1fr;
+      }
+
+      &__image {
+        margin: auto;
+        box-shadow: 1rem 1.5rem 1.5rem rgba($color: #000000, $alpha: 0.25);
+
+        & img.img1 {
+          max-width: 40rem;
+
+          @include respond(tab-port) {
+            max-width: 100%;
+          }
+        }
+
+        & img.img2 {
+          max-width: 45rem;
+
+          @include respond(tab-port) {
+            max-width: 100%;
+          }
+        }
+
+        & img.img3 {
+          max-width: 40rem;
+          // max-width: 35rem;
+          @include respond(tab-port) {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    &--talkAboutTraining {
+      // @extend .heading-tertiary;
+
+      & h2 {
+        font-size: 2.5rem;
+        text-transform: capitalize;
+        color: $color-blue-light;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 2rem;
+      }
+
+      // margin-bottom: 1rem;
     }
   }
 
   // Block for explanation of training services
   &__methods {
-    background-color: grey;
     margin: 0 -$trainingInfo-padding;
-    // margin-bottom: 4rem;
     padding: 8rem 10rem 11rem 10rem;
-    // padding-bottom: 6rem;
-    // border-radius: 10px;
-    // box-shadow: 1rem 1.5rem 1rem rgba($color-black, 0.1);
 
     &:nth-child(odd) {
       background-color: $color-grey-light-1;
     }
 
-    &:nth-child(even) {
-      // background-image: url('../images/design/patterns/full-bloom.png');
-
-      background-color: $color-white;
-    }
-
     & h3 {
       @extend .heading-tertiary;
       text-align: center;
-      text-decoration: underline;
+      // text-decoration: underline;
       padding-bottom: 2rem;
       padding-top: 0;
       font-size: 2rem;
@@ -188,18 +234,40 @@ $trainingInfo-padding: 3rem;
   ***********************/
   &__tableOfContents {
     background-image: url('../images/design/patterns/full-bloom.png');
-    padding-bottom: 3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
     margin: 0 -$trainingInfo-padding;
     margin-top: 2rem;
     margin-bottom: 2rem;
 
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    &__innerBorder {
+      border-top: solid 1rem $color-gold;
+      border-bottom: solid 1rem $color-gold;
+      //Inner box shadow
+      box-shadow: 0 1.5rem 1.5rem rgba($color: #000000, $alpha: 0.25) inset,
+        0 -1.5rem 1.5rem rgba($color: #000000, $alpha: 0.25) inset;
+
+      // To keep list in narrower and formatting
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 7rem;
+      padding-top: 5rem;
+
+      @include respond(tab-port) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
+    }
+
     & h3 {
-      // color: $color-blue-light;
       text-decoration: underline;
       padding-top: 4rem;
-      // margin-bottom: 1rem;
+      color: $color-blue-light;
+      font-size: 2.5rem;
+
+      text-shadow: 0 3px 0.5rem rgba($color: #2b2b2b, $alpha: 0.4);
     }
 
     &__grid {
@@ -215,6 +283,7 @@ $trainingInfo-padding: 3rem;
       text-decoration: underline;
       font-weight: bold;
       margin-bottom: 1rem;
+      text-shadow: 0 3px 0.5rem rgba($color: #2b2b2b, $alpha: 0.2);
     }
 
     list-style: none;
@@ -227,6 +296,7 @@ $trainingInfo-padding: 3rem;
       display: flex;
       align-items: center;
       color: $color-blue-light;
+      text-shadow: 0 3px 0.5rem rgba($color: #2b2b2b, $alpha: 0.2);
     }
 
     & a:link,
@@ -247,14 +317,14 @@ $trainingInfo-padding: 3rem;
   *************************/
 
   &__behaviorProblems {
-    background-color: $color-blue-light;
-    color: $color-white;
+    // background-color: $color-blue-light;
+    // color: $color-white;
     padding: 2rem $trainingInfo-padding;
     margin-left: -$trainingInfo-padding;
     margin-right: -$trainingInfo-padding;
 
     &--border {
-      border: 5px dotted $color-white;
+      border: 6px dotted $color-blue-light;
       border-radius: 10px;
       padding: 2rem;
       padding-bottom: 0;
@@ -262,13 +332,16 @@ $trainingInfo-padding: 3rem;
 
     & h3 {
       padding: 0;
+      padding-top: 1rem;
       text-transform: capitalize;
-      font-size: 2.5rem;
+      font-size: 2.3rem;
+      color: $color-blue-light;
+      text-decoration: underline;
     }
     & ul {
       margin: 0;
-      padding-top: 1.5rem;
-      padding-bottom: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       font-weight: bold;
       font-size: 1.8rem;
     }
@@ -335,8 +408,8 @@ $trainingInfo-padding: 3rem;
   Training Packages cards section 
   ****************/
   &__packages {
-    margin-top: 6rem;
-    margin-bottom: 10rem;
+    // margin-top: 1rem;
+    margin-bottom: 7rem;
 
     & h3 {
       // @extend .heading-secondary;
