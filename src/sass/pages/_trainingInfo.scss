@@ -1,3 +1,5 @@
+$trainingInfo-padding: 3rem;
+
 .trainingInfo {
   &__header {
     @extend .headerHero;
@@ -6,35 +8,42 @@
         center/cover;
 
       &--imageTint {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0);
       }
     }
   }
 
+  &__dividerIcon .dividerIcon {
+    background-color: rgb(60, 60, 60);
+  }
+
   &__background {
-    background-color: $color-grey-light-1;
+    // background-color: $color-grey-light-1;
+    background-color: #f4f2f2;
+    background-image: url('https://www.transparenttextures.com/patterns/reticular-tissue.png');
     // width: 100%;
     padding: 3rem;
 
     @include respond(tab-port) {
-      padding: 3rem 1.5rem;
+      padding: 0;
     }
   }
 
   &__wrapper {
-    max-width: 100rem;
+    // $trainingInfo-padding: 3rem;
+    max-width: $site-width;
     background-color: white;
     margin: auto;
-    padding: 3rem;
+    padding: 0 $trainingInfo-padding;
+    border-radius: 10px;
   }
+
+  /***************
+  Global styling
+  ***************/
 
   & h2 {
     text-align: center;
-
-    & > .headerSmallerText {
-      font-size: 2.2rem;
-      text-transform: none;
-    }
   }
 
   & h3 {
@@ -54,31 +63,235 @@
     margin-bottom: 2rem;
   }
 
-  // List styling
+  &__greyDiv {
+    margin-left: -$trainingInfo-padding;
+    margin-right: -$trainingInfo-padding;
+
+    background-color: $color-grey-light-1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__singlePaw {
+    background-image: url('../images/design/pawprint.png');
+    background-size: 1.5rem;
+    background-repeat: repeat-x;
+    height: 1.5rem;
+  }
+
+  /****************************
+  Introduction section
+  ****************************/
+
+  &__introBlock {
+    margin-left: -$trainingInfo-padding;
+    margin-right: -$trainingInfo-padding;
+    background-image: url('../images/design/woodbg.jpg');
+    padding: $trainingInfo-padding;
+
+    &--text {
+      background-color: rgba($color-white, 0.9);
+      padding: 3rem 5rem;
+      border-radius: 10px;
+      padding-bottom: 6rem;
+    }
+
+    & p {
+      margin-bottom: 0;
+      font-size: 1.8;
+
+      @include respond(tab-port) {
+        font-size: 2rem;
+        text-align: justify;
+      }
+    }
+  }
+
+  &__mainHeading {
+    @extend .heading-secondary;
+    color: $color-grey-dark-3;
+    text-align: center;
+    padding: 3rem;
+    padding-bottom: 0rem;
+  }
+
+  &__secondaryHeading {
+    @extend .heading-secondary;
+    text-align: center;
+    font-size: 2.2rem;
+    text-transform: none;
+  }
+
+  // Question block section in blue
+
+  &__questionBlock {
+    text-align: center;
+    font-weight: bold;
+    color: $color-white;
+    padding: 2rem $trainingInfo-padding;
+    background-color: $color-blue-light;
+    margin-left: -$trainingInfo-padding;
+    margin-right: -$trainingInfo-padding;
+
+    &--border {
+      border: 5px dotted $color-white;
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    & p {
+      font-size: 2rem;
+    }
+
+    &--now {
+      color: $color-gold;
+      font-size: 2.2rem;
+    }
+  }
+
+  /***********************
+  Text Block Classes - used in the first part of page
+  ***********************/
+
+  &__textBlock {
+    padding: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      padding: 4rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    & p {
+      font-size: 1.8rem;
+      text-align: justify;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      // justify-content: space-evenly;
+      align-items: center;
+
+      @include respond(tab-port) {
+        grid-template-columns: 1fr;
+      }
+
+      &__image {
+        margin: auto;
+        box-shadow: 1rem 1.5rem 1.5rem rgba($color: #000000, $alpha: 0.25);
+
+        & img.img1 {
+          max-width: 40rem;
+
+          @include respond(tab-port) {
+            max-width: 100%;
+          }
+        }
+
+        & img.img2 {
+          max-width: 45rem;
+
+          @include respond(tab-port) {
+            max-width: 100%;
+          }
+
+          @include respond(phone) {
+            // width: 90rem;
+          }
+        }
+
+        & img.img3 {
+          max-width: 40rem;
+
+          @include respond(tab-port) {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /***********************
+  Global List styling
+  ***********************/
   & ul,
   ol {
     font-size: 1.8rem;
-    // margin-left: 3rem;
-    // margin: 2rem 0;
-    margin: 2rem 0 2rem 3rem;
+    margin: 2rem 0 0 3rem;
   }
 
+  /***********************
+  Table of contents
+  ***********************/
   &__tableOfContents {
-    & h3 {
-      color: $color-blue-light;
-      text-decoration: underline;
+    background-image: url('../images/design/patterns/full-bloom.png');
+
+    margin: 0 -$trainingInfo-padding;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    &__innerBorder {
+      border-top: solid 1rem $color-gold;
+      border-bottom: solid 1rem $color-gold;
+      //Inner box shadow
+      box-shadow: 0 1.5rem 1.5rem rgba($color: #000000, $alpha: 0.25) inset,
+        0 -1.5rem 1.5rem rgba($color: #000000, $alpha: 0.25) inset;
+
+      // To keep list in narrower and formatting
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 7rem;
+      padding-top: 5rem;
+
+      @include respond(tab-port) {
+        padding-left: 0rem;
+        padding-right: 0rem;
+      }
     }
 
+    & h3 {
+      text-decoration: underline;
+      padding-top: 4rem;
+      color: $color-blue-light;
+      font-size: 2.5rem;
+
+      text-shadow: 0 3px 0.5rem rgba($color: #2b2b2b, $alpha: 0.4);
+    }
+
+    &__grid {
+      display: grid;
+      // grid-template-columns: 1fr 1fr;
+      // justify-content: space-evenly;
+
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+    }
     & h4 {
-      text-transform: uppercase;
+      // text-transform: uppercase;
+      text-decoration: underline;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      text-shadow: 0 3px 0.5rem rgba($color: #2b2b2b, $alpha: 0.2);
     }
 
     list-style: none;
+
+    & ul {
+      padding-bottom: 2rem;
+    }
 
     & li {
       display: flex;
       align-items: center;
       color: $color-blue-light;
+      text-shadow: 0 3px 0.5rem rgba($color: #2b2b2b, $alpha: 0.2);
     }
 
     & a:link,
@@ -94,15 +307,387 @@
     }
   }
 
+  /*************************
+  Common Behavior Problems feature list
+  *************************/
+
+  &__behaviorProblems {
+    background-color: $color-grey-light-1;
+    padding: 2rem $trainingInfo-padding;
+    margin-left: -$trainingInfo-padding;
+    margin-right: -$trainingInfo-padding;
+
+    &--border {
+      border: 6px dotted $color-blue-light;
+      border-radius: 10px;
+      // padding: 2rem;
+      padding-bottom: 0;
+    }
+
+    & h3 {
+      padding: 3rem;
+      // padding-top: 3rem;
+      text-transform: capitalize;
+      font-size: 2.3rem;
+      color: $color-blue-light;
+      text-decoration: underline;
+    }
+    & ul {
+      margin: 0;
+      // padding-top: 2rem;
+      padding-bottom: 3rem;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+  }
+
   &--listGrid {
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
+
+    @include respond(phone) {
+      // grid-template-columns: auto;
+      // justify-content: start;
+      // margin-left: 5rem !important;
+    }
+  }
+
+  /*************************
+  Get started feature / button
+  *************************/
+
+  &__getStarted {
+    // max-width: 100%;
+    max-width: 75rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    // margin-top: -1rem;
+    padding: 2rem;
+    background-image: url('../images/design/woodbg.jpg');
+
+    border: 4px solid $color-gold;
+    border-radius: 10px;
+    box-shadow: 1rem 1.5rem 3rem rgba($color-black, 0.35);
+
+    @include respond(tab-port) {
+      margin-top: 3rem;
+      max-width: 100%;
+    }
+
+    &--grid {
+      display: grid;
+      // grid-template-columns: auto auto;
+      grid-template-columns: repeat(auto-fit);
+      align-items: center;
+      background-color: rgba($color-white, 0.93);
+      padding: 1rem;
+      border-radius: 10px;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    & p {
+      margin: 0 !important;
+      font-size: 2.3rem;
+      font-weight: bold;
+    }
+
+    & .btnFancyText {
+      text-shadow: none;
+      // transition: font-size 1s;
+
+      &:hover {
+        text-shadow: 3px 3px 1rem rgba($color-gold, 0.8);
+        // font-size: 3rem;
+      }
+    }
+  }
+
+  /***********************
+  Talk about training block
+  ***********************/
+
+  &__talkAboutTraining {
+    background-image: url('../images/design/pawprint.png'),
+      url('../images/design/pawprint.png');
+    background-position: top, bottom;
+    background-size: 2rem;
+    background-repeat: repeat-x;
+
+    padding: 5rem 9rem;
+
+    @include respond(phone) {
+      padding: 5rem;
+    }
+
+    & h2 {
+      font-size: 2.5rem;
+      text-transform: capitalize;
+      color: $color-blue-light;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-bottom: 2rem;
+    }
+
+    & a,
+    & a:visited,
+    & a:active {
+      color: $color-blue-light;
+      font-weight: bold;
+    }
+
+    & p:last-child {
+      text-align: center;
+    }
+  }
+
+  /***********************
+  Training methods blocks 
+  ***********************/
+  &__methods {
+    margin: 0 -$trainingInfo-padding;
+    padding: 8rem 10rem 11rem 10rem;
+
+    @include respond(phone) {
+      padding: 8rem 5rem 8rem 5rem;
+    }
+
+    &:nth-child(odd) {
+      background-color: $color-grey-light-1;
+    }
+
+    & h3 {
+      @extend .heading-tertiary;
+      text-align: center;
+      // text-decoration: underline;
+      padding-bottom: 2rem;
+      padding-top: 0;
+      font-size: 2rem;
+    }
+
+    & p {
+      margin: 0;
+      text-align: justify;
+    }
+
+    & ul {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__LocationGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
 
     @include respond(phone) {
       grid-template-columns: auto;
-      justify-content: start;
-      margin-left: 5rem !important;
+      justify-content: center;
+
+      & > div:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+
+    & h4,
+    p {
+      text-align: center;
+    }
+  }
+
+  &__packageBorder {
+    margin-top: -6rem;
+    margin-bottom: 4rem;
+  }
+
+  /****************
+  Training Packages cards section 
+  ****************/
+  &__packages {
+    // margin-top: 1rem;
+    margin-bottom: 7rem;
+
+    &__heading {
+      border: 6px dotted $color-blue-light;
+      background-color: $color-grey-light-1;
+      max-width: 70rem;
+      margin: auto;
+      margin-bottom: 5rem;
+      border-radius: 10px;
+
+      & h3 {
+        // @extend .heading-secondary;
+        font-size: 3.5rem;
+        padding-bottom: 0rem;
+        padding-top: 2rem;
+
+        color: $color-blue-light;
+        text-transform: capitalize;
+      }
+
+      & p {
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 1rem 4rem;
+        padding-bottom: 2rem;
+      }
+
+      & a,
+      & a:visited,
+      & a:active {
+        color: $color-blue-light;
+        font-weight: bold;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2.5rem;
+
+      @include respond(tab-land) {
+        grid-template-columns: auto;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__package {
+    border: 1px solid rgb(142, 142, 142);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1rem 1.5rem 2rem rgba($color-black, 0.15);
+    max-width: 50rem;
+
+    @include respond(tab-land) {
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__title {
+      @extend .fancyText;
+      // background-color: $color-blue-light;
+      background-size: cover;
+      color: $color-blue-light;
+      // padding: 1rem 0 0.5rem 1rem;
+      padding: 1rem 2rem;
+      text-transform: capitalize;
+      text-align: center;
+      height: 22rem;
+      border-radius: 10px 10px 0 0;
+
+      @include respond(tab-port) {
+        min-height: 27rem;
+      }
+
+      & h4 {
+        font-size: 2.7rem;
+        text-shadow: 1px 1px 1px rgba($color-black, 0.3);
+        background-image: linear-gradient(
+          to right,
+          rgba($color-grey-light-2, 0.8) 80%,
+          rgba($color-grey-dark-2, 0.8)
+        );
+        padding: 0.5rem;
+        border-radius: 10px;
+      }
+    }
+
+    &__cardBody {
+      height: 100%;
+      background-image: url('../images/design/patterns/full-bloom.png');
+      padding-bottom: 1rem;
+    }
+
+    &__sessions {
+      font-weight: bold;
+      padding-top: 1rem;
+      text-align: center;
+      // background-color: rgba($color-white, 0.7);
+
+      & p {
+        font-size: 1.8rem;
+        color: black;
+      }
+    }
+
+    &__description {
+      min-height: 20rem;
+      padding: 1rem 2rem;
+      margin: 0 1rem;
+      background-color: rgba($color-white, 0.7);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      text-align: justify;
+      border: 1px solid $color-grey-light-2;
+    }
+
+    &__price {
+      text-align: center;
+      margin-top: 1rem;
+
+      & p {
+        font-size: 2.4rem;
+        font-weight: bold;
+        color: $color-blue-light;
+        // text-decoration: underline;
+      }
+    }
+
+    &__list {
+      // padding: 3rem;
+
+      ul {
+        list-style: none;
+        width: 70%;
+        margin: 0 auto;
+
+        li {
+          text-align: center;
+          font-size: 1.5rem;
+          padding: 1rem;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid rgb(142, 142, 142);
+          }
+        }
+      }
+    }
+
+    /******************
+    Individual cards
+    ******************/
+    &--basic {
+      & .trainingInfo__package__title {
+        background-image: url('../images/design/card/pup-in-basket.jpg');
+      }
+    }
+
+    &--noble {
+      transform: scale(1.04);
+      @include respond(tab-land) {
+        transform: scale(1);
+      }
+
+      & .trainingInfo__package__title {
+        background-image: url('../images/design/card/adorable-dog.jpg');
+
+        & h4 {
+          color: $color-gold;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &--advanced {
+      & .trainingInfo__package__title {
+        background-image: url('../images/design/card/doberman.jpg');
+      }
     }
   }
 }
