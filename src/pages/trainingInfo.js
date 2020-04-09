@@ -8,8 +8,7 @@ import DividerIcon from '../components/layout/DividerIcon';
 import { FaDog } from 'react-icons/fa';
 import BtnFancyText from '../components/buttons/BtnFancyText';
 
-import testimonials from '../tnd/testimonials';
-import TestimonialSingle from '../components/testimonials/TestimonialSingle';
+import Cities from '../components/elements/Cities';
 
 const SecondPage = () => (
   <Layout>
@@ -203,7 +202,7 @@ const SecondPage = () => (
               <ul className='trainingInfo--listGrid'>
                 <div>
                   <li>Defiance</li>
-                  <li>Aggression (various forms)</li>
+                  <li>Aggression</li>
                   <li>Walking properly</li>
                   <li>Dominance</li>
                   <li>Destructive behavior</li>
@@ -212,9 +211,9 @@ const SecondPage = () => (
                   <li>Shyness</li>
                 </div>
                 <div>
-                  <li>Jumping on people and furniture</li>
+                  <li>Jumping</li>
                   <li>Stealing food</li>
-                  <li>“Bogarting” items</li>
+                  <li>Guarding items</li>
                   <li>Separation anxiety</li>
                   <li>Excessive barking</li>
                   <li>Urinating indoors</li>
@@ -271,8 +270,10 @@ const SecondPage = () => (
                 to have a friendlier disposition (or any other behavior goals
                 you may have!).
               </p>
-              <p style={{ textAlign: 'center' }}>
-                <strong>Find information on training packages below</strong>
+              <p>
+                <a href='#trainingPrices'>
+                  Find information on training packages below
+                </a>
               </p>
             </div>
           </div>
@@ -311,10 +312,6 @@ const SecondPage = () => (
               to learn about your dog's own psychology and behavior patterns.
             </p>
           </div>
-
-          {/* <div className='mt-2 mb-5'>
-            <TestimonialSingle testimonials={testimonials} name='Anthony G' />
-          </div> */}
 
           <div className='trainingInfo__methods'>
             <h3 id='trainingSuccess'>
@@ -537,29 +534,39 @@ const SecondPage = () => (
               at your home and other public locations depending on what we are
               working on.
             </p>
-            <h4>
-              <u>Ventura and Oxnard</u>
-            </h4>
-            <p>
-              Wednesday, Thursday, and Friday from 4pm to 8pm
-              <br />
-              Saturday and Sunday from 10AM to 7PM
-            </p>
-            <h4>
-              <u>Camarillo</u>
-            </h4>
-            <p>Saturday and Sunday from 10AM to 7PM</p>
+            <Cities />
+            <div className='trainingInfo__LocationGrid'>
+              <div>
+                <h4>
+                  <u>Ventura and Oxnard</u>
+                </h4>
+                <p>
+                  Wednesday, Thursday, and Friday from 4pm to 8pm
+                  <br />
+                  Saturday and Sunday from 10AM to 7PM
+                </p>
+              </div>
+              <div>
+                <h4>
+                  <u>Camarillo</u>
+                </h4>
+                <p>Saturday and Sunday from 10AM to 7PM</p>
+              </div>
+            </div>
+            {/* End location grid */}
           </div>
 
-          <div className='trainingInfo__packages'>
-            <h3 id='trainingPrices'>Training Packages</h3>
-            <p className='trainingInfo__packages__introP'>
-              We can help suggest which training package may be best for your
-              situation and goals.
-              <br />
-              <strong>See below</strong> on how to schedule and introduction
-              training session.
-            </p>
+          <div className='trainingInfo__packages' id='trainingPrices'>
+            <div className='trainingInfo__packages__heading '>
+              <h3>Training Packages</h3>
+              <p>
+                <a href='#trainingStart'>See below</a> to schedule and
+                introduction training session.
+                <br />
+                We can help suggest which training package may be best for your
+                situation.
+              </p>
+            </div>
             <div className='trainingInfo__packages__grid'>
               <div className='trainingInfo__package trainingInfo__package--basic'>
                 <div className='trainingInfo__package__title'>

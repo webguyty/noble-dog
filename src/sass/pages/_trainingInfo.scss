@@ -72,6 +72,13 @@ $trainingInfo-padding: 3rem;
     padding-bottom: 1rem;
   }
 
+  &__singlePaw {
+    background-image: url('../images/design/pawprint.png');
+    background-size: 1.5rem;
+    background-repeat: repeat-x;
+    height: 1.5rem;
+  }
+
   /****************************
   Introduction section
   ****************************/
@@ -313,13 +320,13 @@ $trainingInfo-padding: 3rem;
     &--border {
       border: 6px dotted $color-blue-light;
       border-radius: 10px;
-      padding: 2rem;
+      // padding: 2rem;
       padding-bottom: 0;
     }
 
     & h3 {
-      padding: 0;
-      padding-top: 1rem;
+      padding: 3rem;
+      // padding-top: 3rem;
       text-transform: capitalize;
       font-size: 2.3rem;
       color: $color-blue-light;
@@ -327,8 +334,8 @@ $trainingInfo-padding: 3rem;
     }
     & ul {
       margin: 0;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      // padding-top: 2rem;
+      padding-bottom: 3rem;
       font-weight: bold;
       font-size: 1.8rem;
     }
@@ -340,9 +347,9 @@ $trainingInfo-padding: 3rem;
     justify-content: space-around;
 
     @include respond(phone) {
-      grid-template-columns: auto;
-      justify-content: start;
-      margin-left: 5rem !important;
+      // grid-template-columns: auto;
+      // justify-content: start;
+      // margin-left: 5rem !important;
     }
   }
 
@@ -424,8 +431,15 @@ $trainingInfo-padding: 3rem;
       margin-bottom: 2rem;
     }
 
-    & p:last-child {
+    & a,
+    & a:visited,
+    & a:active {
       color: $color-blue-light;
+      font-weight: bold;
+    }
+
+    & p:last-child {
+      text-align: center;
     }
   }
 
@@ -457,6 +471,36 @@ $trainingInfo-padding: 3rem;
       margin: 0;
       text-align: justify;
     }
+
+    & ul {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__LocationGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+    @include respond(phone) {
+      grid-template-columns: auto;
+      justify-content: center;
+
+      & > div:first-child {
+        margin-bottom: 2rem;
+      }
+    }
+
+    & h4,
+    p {
+      text-align: center;
+    }
+  }
+
+  &__packageBorder {
+    margin-top: -6rem;
+    margin-bottom: 4rem;
   }
 
   /****************
@@ -466,20 +510,37 @@ $trainingInfo-padding: 3rem;
     // margin-top: 1rem;
     margin-bottom: 7rem;
 
-    & h3 {
-      // @extend .heading-secondary;
-      font-size: 3.5rem;
-      padding-bottom: 0rem;
+    &__heading {
+      border: 6px dotted $color-blue-light;
+      background-color: $color-grey-light-1;
+      max-width: 70rem;
+      margin: auto;
+      margin-bottom: 5rem;
+      border-radius: 10px;
 
-      color: $color-blue-light;
-      text-transform: capitalize;
-    }
+      & h3 {
+        // @extend .heading-secondary;
+        font-size: 3.5rem;
+        padding-bottom: 0rem;
+        padding-top: 2rem;
 
-    &__introP {
-      text-align: center;
-      font-size: 1.8rem;
-      padding: 1rem 6rem;
-      padding-bottom: 3rem;
+        color: $color-blue-light;
+        text-transform: capitalize;
+      }
+
+      & p {
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 1rem 4rem;
+        padding-bottom: 2rem;
+      }
+
+      & a,
+      & a:visited,
+      & a:active {
+        color: $color-blue-light;
+        font-weight: bold;
+      }
     }
 
     &__grid {
