@@ -1,0 +1,14 @@
+.temp-closure {
+  text-align: center;
+  border: 2px solid red;
+
+  & h1 {
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+  }
+
+  & p {
+    padding: 0 0.5rem;
+  }
+}
