@@ -21,11 +21,9 @@ const Layout = ({ children }) => {
     <>
       <Menu />
       <div className='temp-closure'>
-        <h1>Temporary Closure</h1>
+        <h1>Permanently Closed</h1>
         <p>
-          We are currently closed due to Coronavirus. Please check back soon,
-          hopefully we can get back to normal operations in the near future!
-          Stay safe.
+          We are now permanently closed. Thank you to all the great people and doggies I got to work with over the years. Special thanks to my dogs Ollie and Chata who helped with teaching other dogs how to socialize. If anyone would like to contact me about non dog training matters - tyler@webguyty.com
         </p>
       </div>
       <main>
